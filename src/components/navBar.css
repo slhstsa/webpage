@@ -1,0 +1,35 @@
+.banner-links-header{
+
+  display: flex;
+  position: fixed;
+  width: 100%;
+  font-size: 30px;
+  justify-content: space-around;
+  padding: 15px 0px 15px 0px;
+  background-color: whitesmoke;
+  z-index: 1;
+  animation: stickyNav linear forwards;
+  
+  animation-timeline: view();
+  animation-range-start: 170vh;
+  animation-range-end: 180vh;
+}
+
+.center-header{
+  display: flex;
+  justify-content: center;
+}
+.header-link{
+  font-family: 'Archivo Black';
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes stickyNav {
+  100% {
+    margin-top: 20px;
+    width: 700px;
+    border-radius: 50px;
+    background-color: aqua;
+  }
+}

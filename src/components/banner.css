@@ -19,21 +19,3 @@
   bottom: 50px;
 }
 
-.banner-links-header{
-  display: flex;
-  position: absolute;
-  top: 20px;
-  font-size: 30px;
-  width: 800px;
-  left: 20px;
-  justify-content: space-around;
-  padding: 15px 0px 15px 0px;
-  background-color: whitesmoke;
-  border-radius: 50px;
-}
-
-.header-link{
-  font-family: 'Archivo Black';
-  text-decoration: none;
-  color: black;
-}
