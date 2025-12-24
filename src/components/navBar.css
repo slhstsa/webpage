@@ -3,11 +3,12 @@
   display: flex;
   position: fixed;
   width: 100%;
-  font-size: 30px;
-  justify-content: space-around;
-  padding: 15px 0px 15px 0px;
+  font-size: 15px;
+  justify-content: right;
+  gap: 3em;
+  padding: 15px 40px 15px 0px;
   background-color: whitesmoke;
-  z-index: 1;
+  z-index: 4;
   animation: stickyNav linear forwards;
   
   animation-timeline: view();
@@ -31,5 +32,12 @@
     width: 700px;
     border-radius: 50px;
     background-color: aqua;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 }

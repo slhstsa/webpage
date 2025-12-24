@@ -8,6 +8,32 @@
   width: 100%;
   object-fit: cover;
   object-position: top;
+  filter: blur(1px);
+}
+
+.banner-title{
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+  top: 40%;
+  font-weight: 900;
+  text-align: center;
+  font-size: 60px;
+  color: rgb(245, 245, 245);
+  z-index: 1;
+  padding: 5px 15px 5px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  p{
+    margin-top: 0px;
+    font-size: medium;
+  }
 }
 
 .search-bar-banner{
