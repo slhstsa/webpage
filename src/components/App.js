@@ -1,6 +1,6 @@
 
 import './App.css';
-import Banner from './components/banner'
+import Banner from './banner'
 function App() {
   return (
     <>

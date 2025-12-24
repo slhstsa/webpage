@@ -1,6 +1,6 @@
-input{
+.bar{
   height: 30px;
-  width: 350px;
+  width: 100%;
   padding: 15px 20px 15px 20px;
   border-radius: 30px;
   border: solid;
@@ -12,7 +12,12 @@ input{
 
 .search-bar{
   position: relative;
-  width: 350px;
+  width: 300px;
+  transition: width .2s;
+}
+
+.search-bar:hover{
+  width: 350px
 }
 .magnifying-img{
   position: absolute;

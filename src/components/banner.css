@@ -7,6 +7,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .search-bar-banner{
@@ -16,4 +17,23 @@
   margin-inline: auto; 
   width: fit-content;
   bottom: 50px;
+}
+
+.banner-links-header{
+  display: flex;
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+  width: 800px;
+  left: 20px;
+  justify-content: space-around;
+  padding: 15px 0px 15px 0px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+
+.header-link{
+  font-family: 'Archivo Black';
+  text-decoration: none;
+  color: black;
 }
