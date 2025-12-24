@@ -1,0 +1,19 @@
+.banner-container{
+  height: 700px;
+  position: relative;
+}
+
+.banner-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.search-bar-banner{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+  bottom: 50px;
+}

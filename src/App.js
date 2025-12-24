@@ -1,10 +1,11 @@
 
 import './App.css';
-
+import Banner from './components/banner'
 function App() {
   return (
     <>
-      ever danced with the devil in the pale moonlight
+      <Banner />
+    
     </>
   );
 }
