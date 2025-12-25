@@ -1,35 +1,66 @@
 .banner-links-header{
-
   display: flex;
-  position: fixed;
-  width: 100%;
   font-size: 15px;
   justify-content: right;
   gap: 3em;
   padding: 15px 40px 15px 0px;
+  
+}
+
+.logo{
+  
+  font-family: 'Archivo Black';
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin-left: 20px;
+  padding: 15px 40px 15px 20px;
+  transition: background-color .15s, color .15s;
+  color: rgba(205, 32, 39);
+  display: flex;
+  justify-content: center;
+}
+
+.logo:hover{
+  background-color: rgba(205, 32, 39);
+  color: white;
+}
+
+.nav-bar-container{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
   background-color: whitesmoke;
   z-index: 4;
   animation: stickyNav linear forwards;
-  
+  width: 100%;
+  height: 60px;
   animation-timeline: view();
-  animation-range-start: 170vh;
-  animation-range-end: 180vh;
+  animation-range-start: 193vh;
+  animation-range-end: 198vh;
 }
-
 .center-header{
   display: flex;
   justify-content: center;
+  
 }
 .header-link{
   font-family: 'Archivo Black';
   text-decoration: none;
   color: black;
+  transition: color .15s;
+  
 }
+.header-link:hover{
+    color: rgba(205, 32, 39);
+  }
+
 
 @keyframes stickyNav {
   100% {
     margin-top: 20px;
-    width: 700px;
+    width: 800px;
     border-radius: 50px;
     background-color: aqua;
 
