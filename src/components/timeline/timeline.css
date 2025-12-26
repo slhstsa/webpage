@@ -94,7 +94,7 @@
 }
 
 .timeline-item.active .timeline-dot {
-  background-color: #fbc02d; /* Gold */
+  background-color: #fbc02d; 
   box-shadow: 0 0 0 1px #fbc02d;
   transform: scale(1.4);
   z-index: 5;
