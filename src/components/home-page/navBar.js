@@ -1,27 +1,32 @@
 import './navBar.css';
+import { Link } from 'react-router-dom'; 
 
 function Navigation()
 {
   return(
-    <div class="center-header">
-      <div class="nav-bar-container">
-        <a href="#" class="logo"> 
+    <div className="center-header">
+      <div className="nav-bar-container">
+        
+        <Link to="/" className="logo"> 
           We Live Together
-        </a>
-        <div class="banner-links-header">
-          <a href="#" class="header-link">
+        </Link>
+
+        <div className="banner-links-header">
+          <a href="#" className="header-link">
             Map
           </a>
-          <a href="#" class="header-link">
+
+          <Link to="/timeline" className="header-link">
             Timeline
-          </a>
-          <a href="#" class="header-link">
+          </Link>
+
+          <a href="#" className="header-link">
             Resources
           </a>
-          <a href="#" class="header-link">
+          <a href="#" className="header-link">
             Community
           </a>
-           <a href="#" class="header-link">
+           <a href="#" className="header-link">
             Documentation
           </a>
         </div>
