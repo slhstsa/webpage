@@ -13,6 +13,9 @@ function Navigation()
             Map
           </a>
           <a href="#" class="header-link">
+            Timeline
+          </a>
+          <a href="#" class="header-link">
             Resources
           </a>
           <a href="#" class="header-link">
