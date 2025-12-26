@@ -9,6 +9,7 @@ const timelineData = Array.from({ length: n }, (_, i) => ({
   title: `Placeholder Title ${i + 1}`,
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  image: "images/placeholder-image.png"
 }));
 
 function Timeline() {
@@ -51,7 +52,10 @@ function Timeline() {
             </div>
           );
         })}
+        
       </div>
+      <img src={timelineData[activeIndex].image} alt="Katy Community" className="year-image"/>
+ 
     </div>
   );
 }
