@@ -1,0 +1,13 @@
+.filter-circle{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid;
+  border-color: rgb(121, 121, 121);
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.filter-circle:active{
+  border-color: rgb(99, 14, 14);
+}
