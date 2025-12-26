@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./timeline.css";
 
-// Generate placeholder data
-
 const n = 8; 
 
 const timelineData = Array.from({ length: n }, (_, i) => ({
