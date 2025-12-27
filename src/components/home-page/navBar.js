@@ -1,35 +1,27 @@
 import './navBar.css';
 import { Link } from 'react-router-dom'; 
-
+import Search from './search';
 function Navigation()
 {
   return(
     <div className="center-header">
       <div className="nav-bar-container">
-        
-        <Link to="/" className="logo"> 
-          We Live Together
+        <a href="#" className="header-link">
+          Documentation
+        </a>
+
+        <Link to="/timeline" className="header-link">
+          Home
         </Link>
-
-        <div className="banner-links-header">
+        <Search />
+        <div class="more-option">
           <a href="#" className="header-link">
-            Map
+          More
           </a>
-
-          <Link to="/timeline" className="header-link">
-            Timeline
-          </Link>
-
-          <a href="#" className="header-link">
-            Resources
-          </a>
-          <a href="#" className="header-link">
-            Community
-          </a>
-           <a href="#" className="header-link">
-            Documentation
-          </a>
+          <img src="images/arrow-down.svg" alt="dropdown-menu-arrow" class="down-arrow"/>
         </div>
+        
+        
       </div>
     </div>
   );
