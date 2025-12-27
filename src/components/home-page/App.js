@@ -4,6 +4,7 @@ import './App.css';
 import Navigation from './navBar'; 
 import TimelineApp from '../timeline/timelineApp';
 import Home from './home-page'
+
 function App() {
   return (
     <Router>
