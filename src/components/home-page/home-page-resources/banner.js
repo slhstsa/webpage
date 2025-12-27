@@ -1,5 +1,4 @@
 import "./banner.css"
-import Search from './search'
 
 function Banner(){
   return(

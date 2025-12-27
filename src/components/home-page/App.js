@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navigation from './navBar'; 
 import TimelineApp from '../timeline/timelineApp';
-import Banner from './banner'
-import Resources from './resource-grid/resource-grid';
-import About from './about'; 
+import Home from './home-page'
 
 function App() {
   return (
@@ -14,9 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <Banner />
-            <Resources />
-            <About />
+            <Home />
           </>
         } />
         <Route path="/timeline" element={<TimelineApp />} />
