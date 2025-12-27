@@ -3,7 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navigation from './navBar'; 
 import TimelineApp from '../timeline/timelineApp';
-import Home from './home-page'
+import Banner from './banner'
+import Resources from './resource-grid/resource-grid';
+import About from './about'; 
+
 function App() {
   return (
     <Router>
@@ -11,7 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <Home />
+            <Banner />
+            <Resources />
+            <About />
           </>
         } />
         <Route path="/timeline" element={<TimelineApp />} />
