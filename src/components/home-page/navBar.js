@@ -1,9 +1,18 @@
 import './navBar.css';
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 import Search from './search';
 
 function Navigation()
 {
+  const navigate = useNavigate();
+
+  const select = (event) => {
+    const path = event.target.value;
+    if (path) {
+      navigate(path);
+    }
+  };
+
   return(
     <div className="center-header">
       <div className="nav-bar-container">
@@ -13,19 +22,35 @@ function Navigation()
         </Link>
 
         <div className="banner-links-header">
-          <a href="#" className="header-link">
+          <Link to="/map" className="header-link"> 
             Map
-          </a>
-
+          </Link>
           <Link to="/timeline" className="header-link">
             Timeline
           </Link>
+          
           <Search />
-          <div class="more-option">
-            <a href="#" className="header-link">
-            More
-            </a>
-            <img src="images/arrow-down.svg" alt="dropdown-menu-arrow" class="down-arrow"/>
+          
+          <div className="more-option">
+            <select 
+              className="header-link" 
+              onChange={select} 
+              defaultValue="" 
+              style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}
+            >
+              <option value="" disabled>
+                More <img src="images/arrow-down.svg" alt="dropdown-menu-arrow" class="down-arrow"/>
+              </option>
+
+              <option value="/documentation">
+                Documentation
+              </option>
+
+              <option value="/resources">
+                Resources
+              </option>
+              
+            </select>
           </div>
         </div>
       </div>
@@ -34,3 +59,5 @@ function Navigation()
 }
 
 export default Navigation;
+
+
