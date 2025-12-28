@@ -2,14 +2,20 @@
 import Banner from './home-page-resources/banner'; 
 import Resources from './resource-grid/resource-grid';
 import About from './home-page-resources/about'; 
-import './home.css'
+import Polaroid from './home-page-resources/polaroid-pic';
+import RetroBanner from './retro-banner';
+import './home-page.css'
 function Home(){
   return(
-    <body class="home-body">
-      <Banner />
-      <Resources />
-      <About />
-    </body>
+    <>
+      <RetroBanner />
+      <div class="polaroid-string">
+        <Polaroid imageurl = "images/katy-stock.jpg"/>
+        <Polaroid imageurl = "images/katy-stock.jpg"/>
+        <Polaroid imageurl = "images/katy-stock.jpg"/>
+      </div>
+      
+    </>
   );
 }
 
