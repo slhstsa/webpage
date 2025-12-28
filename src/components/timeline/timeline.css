@@ -6,7 +6,8 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  padding-top: 80px; 
+  padding-top: 80px;
+	overscroll-behavior: contain;
 }
 
 .content-box {
@@ -109,5 +110,5 @@
 .year-image {
     height:150px; 
     width:auto; 
-    margin-top: 650px;
+    margin-top: 475px;
 }

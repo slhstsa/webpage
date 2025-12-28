@@ -5,6 +5,9 @@ import Navigation from './navBar';
 import TimelineApp from '../timeline/timelineApp';
 
 import RetroBanner from './retro-banner';
+import Navigation from './home-page/navBar'; 
+import Home from './home-page/home-page'
+
 function App() {
   return (
     <Router>
