@@ -10,6 +10,9 @@
 
 .more-option{
   display: flex;
+  border: 3px solid black; 
+  padding: 5px; 
+  margin: 5px; 
 }
 
 .down-arrow{
@@ -46,8 +49,38 @@
 }
 .header-link:hover{
     color: rgba(205, 32, 39);
-  }
+}
 
+.logo{
+  
+  font-family: 'Archivo Black';
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 15px 40px 15px 40px;
+  transition: background-color .15s, color .15s;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.logo:hover{
+  background-color: rgba(205, 32, 39);
+  color: white;
+}
+
+.header-link-option{
+  font-family: 'DIN Condensed Web';
+  text-decoration: none;
+  color: black;
+  transition: color .15s;
+  font-size: 20px;
+  align-self: center;
+}
+
+.header-link-option:hover{
+    color: rgba(205, 32, 39);
+}
 
 @keyframes stickyNav {
   100% {
