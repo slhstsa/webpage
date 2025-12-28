@@ -10,11 +10,11 @@ function Home(){
     <>
       <RetroBanner />
       <div class="polaroid-string">
-        <Polaroid imageurl = "images/katy-stock.jpg"/>
-        <Polaroid imageurl = "images/katy-stock.jpg"/>
-        <Polaroid imageurl = "images/katy-stock.jpg"/>
+        <div style={{transform: 'rotate(5deg)'}}><Polaroid imageurl = "images/katy-stock.jpg" text="learn"/></div>
+        <div style={{transform: 'rotate(-5deg)'}}><Polaroid imageurl = "images/katy-hero.jpg" text="search"/></div>
+        <div style={{transform: 'rotate(7deg)'}}><Polaroid imageurl = "images/katy-stock.jpg" text="join"/></div>
       </div>
-      
+      <About />
     </>
   );
 }
