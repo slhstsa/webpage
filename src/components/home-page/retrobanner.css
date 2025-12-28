@@ -1,0 +1,25 @@
+h1{
+  font-family: 'Yearbook Solid W01';
+  letter-spacing: 3px;
+  font-size: 225px;
+  text-align: center;
+}
+
+.old{
+  letter-spacing: 10px;
+  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000, 5px 5px 0 #000;
+}
+
+.O-letter{
+  color: #606c38;
+  
+}
+
+.L-letter{
+  color: #dda15e;
+}
+
+
+.D-letter{
+  color: #bc6c25;
+}
