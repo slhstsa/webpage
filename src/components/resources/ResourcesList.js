@@ -11,8 +11,8 @@ export default function ResourcesList() {
     const [area, setArea] = useState("All");
     const [query, setQuery] = useState("");
 
-    const categories = ["All", ...new Set(live.map(r => r.category).filter(Boolean))];
-    const areas = ["All", ...new Set(live.flatMap(r => r.service_area || []).filter(Boolean))];
+    const categories = ["All Categories", ...new Set(live.map(r => r.category).filter(Boolean))];
+    const areas = ["All Regions", ...new Set(live.flatMap(r => r.service_area || []).filter(Boolean))];
 
     const filtered = useMemo(() => {
         const q = query.trim().toLowerCase();
@@ -32,16 +32,30 @@ export default function ResourcesList() {
     }, [live, category, area, query]);
 
     return (
+        
         <div className="page-wrapper">
-            <h2>Resources ({filtered.length})</h2>
-
-            <div className="filter-bar">
-                <input
-                    type="text"
+            <h1>
+                Browse Over 
+                <span class="hundred">
+                    <span class="one"> 1</span>
+                    <span class="zero">0</span>
+                    <span class="zero-second">0 </span>
+                </span> 
+                Resources
+            </h1>
+            <h2>Current Resources ({filtered.length})</h2>
+            
+            <div className="bar-wrapper"><div className="search-bar-this">
+                <img className="magnifying-img-this" src="images/searchicon.svg" alt="Magnifying glass"/>
+                <input type="text"
                     placeholder="Search resources…"
                     value={query}
                     onChange={e => setQuery(e.target.value)}
-                />
+                    className="bar-this"
+                    />
+            </div></div>
+            <div className="filter-bar">
+                
 
                 <select value={category} onChange={e => setCategory(e.target.value)}>
                     {categories.map(c => (
