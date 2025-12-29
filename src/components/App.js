@@ -12,7 +12,6 @@ import TimelineApp from "./timeline/timelineApp";
 function App() {
   return (
     <BrowserRouter>
-      <RetroBanner />
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
