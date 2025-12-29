@@ -5,6 +5,7 @@ function TimelineApp() {
   return (
     <>
       <Timeline />
+      <div className="line"></div>
     </>
   );
 }

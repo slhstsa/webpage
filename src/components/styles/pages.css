@@ -1,7 +1,12 @@
+.page-wrapper h1{
+  font-size: 100px;
+  margin: 50px 0px 50px;
+}
+
 .page-wrapper {
   background: var(--page-bg);
   min-height: 100vh;
-  padding: 110px 20px 48px;
+  padding: px 20px 48px;
   max-width: 1180px;
   margin: 0 auto;
   color: var(--text-main);
@@ -11,7 +16,28 @@
 .page-wrapper h2 {
   margin: 0 0 16px;
   letter-spacing: 0.05em;
+  text-align: center;
+  font-family: "DIN Condensed Web";
 }
+
+.hundred{
+  letter-spacing: 10px;
+  font-size: 120px;
+  }
+
+.one{
+  color: #606c38;
+  
+}
+
+.zero{
+  color: #dda15e;
+}
+
+.zero-second{
+  color: #bc6c25;
+}
+
 
 .card-grid {
   display: grid;
@@ -23,10 +49,59 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
+.filter-bar{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 20px;
+  
+}
 
+.filter-bar select{
+  cursor: pointer;
+  padding: 5px 3px 5px 3px;
+  font-family: "DIN Condensed Web";
+  font-size: 20px;
+  border-radius: 10px;
+}
 .card-link {
   text-decoration: none;
   color: inherit;
+}
+.bar-this{
+  height: 10px;
+  
+  width: 200px;
+  padding: 15px 20px 10px 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: transparent;
+  border-bottom: 2px solid #1f1b16;
+  font-size: 17px;
+  margin-bottom: 7px;
+  font-family: 'DIN Condensed Web', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.bar-this:focus{
+  outline: none;
+  border-bottom-color: #c43e5c;
+}
+.search-bar-this{
+  width: 300px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.magnifying-img-this{
+  width: 30px;
+}
+
+.bar-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .info-card {
@@ -43,6 +118,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  
 }
 
 .info-card.clickable {
