@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-01-28",
+  "region": "Katy / Cinco Ranch / Fort Bend / West Harris County",
+  "highlights": {
+    "food_basic_needs": [
+      {
+        "name": "Katy Christian Ministries Food Pantry",
+        "category": "Food & Basic Needs",
+        "why_it_matters": "Largest Katy-based food pantry with integrated social services and case management.",
+        "service_area": ["Katy", "Fort Bend", "West Harris"],
+        "website": "https://ktcm.org/foodpantry/",
+        "tags": ["food", "emergency", "nonprofit", "local"]
+      },
+      {
+        "name": "Houston Food Bank – Find Food",
+        "category": "Food & Basic Needs",
+        "why_it_matters": "Regional backbone for locating pantries and SNAP help by ZIP code.",
+        "service_area": ["Fort Bend", "Harris"],
+        "website": "https://www.houstonfoodbank.org/find-help/",
+        "tags": ["food", "locator", "SNAP", "regional"]
+      },
+      {
+        "name": "United Way / 2-1-1 Texas",
+        "category": "Food & Basic Needs",
+        "why_it_matters": "Best first call when unsure where to start; connects to food, rent, utilities, and healthcare.",
+        "service_area": ["Fort Bend", "Harris", "Katy"],
+        "website": "https://www.211texas.org",
+        "tags": ["hotline", "referrals", "emergency"]
+      }
+    ],
+
+    "health_mental_health": [
+      {
+        "name": "Spring Branch Community Health Center – Katy Clinic",
+        "category": "Healthcare & Mental Health",
+        "why_it_matters": "Low-cost primary care with integrated behavioral health in Katy.",
+        "service_area": ["Katy"],
+        "website": "https://sbchc.net/our-locations/katy-clinic/",
+        "tags": ["primary-care", "behavioral-health", "uninsured"]
+      },
+      {
+        "name": "Texana Center",
+        "category": "Mental Health",
+        "why_it_matters": "Official local mental health authority for Fort Bend County.",
+        "service_area": ["Fort Bend"],
+        "website": "https://www.texanacenter.com",
+        "tags": ["LMHA", "crisis", "psychiatry"]
+      },
+      {
+        "name": "988 Suicide & Crisis Lifeline",
+        "category": "Mental Health",
+        "why_it_matters": "24/7 immediate crisis support for anyone in emotional distress.",
+        "service_area": ["Statewide"],
+        "website": "https://www.hhs.texas.gov/services/mental-health-substance-use/mental-health-crisis-services",
+        "tags": ["crisis", "hotline", "immediate"]
+      }
+    ],
+
+    "housing_utilities": [
+      {
+        "name": "Fort Bend County Emergency Rental Assistance (ERA2)",
+        "category": "Housing & Utilities",
+        "why_it_matters": "Primary long-term rent and utility relief program for Fort Bend renters.",
+        "service_area": ["Fort Bend"],
+        "website": "https://www.fortbendcountytx.gov/government/departments/auditor/emergency-rental-assistance-era2-program",
+        "tags": ["rent", "utilities", "county"]
+      },
+      {
+        "name": "Texas Department of Housing – Help for Texans",
+        "category": "Housing & Utilities",
+        "why_it_matters": "Fastest way to find current rent and utility programs by county.",
+        "service_area": ["Statewide"],
+        "website": "https://www.tdhca.texas.gov/help-for-texans",
+        "tags": ["search", "statewide", "housing"]
+      }
+    ],
+
+    "legal_immigration": [
+      {
+        "name": "Lone Star Legal Aid",
+        "category": "Legal Aid",
+        "why_it_matters": "Gold standard free civil legal aid for low-income households.",
+        "service_area": ["Fort Bend", "Harris"],
+        "website": "https://www.lonestarlegal.org",
+        "tags": ["legal", "eviction", "family-law"]
+      },
+      {
+        "name": "Catholic Charities – Cabrini Center",
+        "category": "Immigration Legal Aid",
+        "why_it_matters": "Most comprehensive immigration legal services in the region.",
+        "service_area": ["Fort Bend", "Harris"],
+        "website": "https://catholiccharities.org/cabrini",
+        "tags": ["immigration", "citizenship", "asylum"]
+      }
+    ],
+
+    "emergency_disaster": [
+      {
+        "name": "ReadyHarris",
+        "category": "Emergency & Disaster",
+        "why_it_matters": "Real-time flood alerts, evacuation info, and recovery resources.",
+        "service_area": ["Harris"],
+        "website": "https://www.readyharris.org",
+        "tags": ["flood", "alerts", "disaster"]
+      },
+      {
+        "name": "KTALERT",
+        "category": "Emergency & Disaster",
+        "why_it_matters": "Official City of Katy emergency notifications.",
+        "service_area": ["Katy"],
+        "website": "https://www.cityofkaty.com/residents/emergency-notifications",
+        "tags": ["alerts", "local", "safety"]
+      }
+    ]
+  }
+}

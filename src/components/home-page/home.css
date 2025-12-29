@@ -1,4 +1,5 @@
 .home-body{
   background-color: #fefae0;
-  height: 2000px
+  min-height: 100vh;
+  padding-top: 90px;
 }

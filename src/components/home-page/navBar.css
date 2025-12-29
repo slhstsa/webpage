@@ -1,66 +1,71 @@
 
-.banner-links-header{
+.center-header {
   display: flex;
-  font-size: 15px;
-  justify-content: right;
-  gap: 3em;
-  padding: 15px 40px 15px 0px;
-  
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 12px;
 }
 
-.more-option{
-  display: flex;
+.nav-bar-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+  width: min(1180px, 100%);
+  padding: 10px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.down-arrow{
-  width: 25px;
+.brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-title {
+  font-family: 'Yearbook Solid W01', 'DIN Condensed Web', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1f1b16;
+}
+
+.banner-links-header {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.more-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.down-arrow {
+  width: 18px;
   margin-bottom: 1px;
 }
 
-
-.nav-bar-container{
-  display: flex;
-  justify-content: center;
-  gap: 5em;
-  position: fixed;
-  align-items: center;
-  border-bottom: 3px black solid;
-  background-color: rgba(0,0,0,0);
-  z-index: 100;
-  width: 800px;
-  height: 60px;
-}
-.center-header{
-  display: flex;
-  justify-content: center;
-  
-}
-.header-link{
-  font-family: 'DIN Condensed Web';
+.header-link {
+  font-family: 'DIN Condensed Web', 'Helvetica Neue', Arial, sans-serif;
   text-decoration: none;
-  color: black;
-  transition: color .15s;
-  font-size: 20px;
-  align-self: center;
-  
+  color: #1f1b16;
+  transition: color 0.15s ease;
+  font-size: 18px;
 }
-.header-link:hover{
-    color: rgba(205, 32, 39);
-  }
 
-
-@keyframes stickyNav {
-  100% {
-    margin-top: 20px;
-    width: 800px;
-    border-radius: 50px;
-    background-color: aqua;
-
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+.header-link:hover {
+  color: #c43e5c;
 }

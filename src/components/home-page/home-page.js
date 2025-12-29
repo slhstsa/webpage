@@ -5,11 +5,11 @@ import About from './home-page-resources/about';
 import './home.css'
 function Home(){
   return(
-    <body class="home-body">
+    <div className="home-body">
       <Banner />
       <Resources />
       <About />
-    </body>
+    </div>
   );
 }
 
