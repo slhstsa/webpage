@@ -1,6 +1,7 @@
 .about-section {
   padding: 100px 40px;
-  background: linear-gradient(135deg, rgb(220, 37, 43) 0%, rgba(205, 32, 39) 100%);
+  background-color: #dda15e;
+  margin-top: 500px;
 }
 
 .about-container {
