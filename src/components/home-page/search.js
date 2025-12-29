@@ -3,9 +3,9 @@ import './search.css';
 
 function Search() {
   return (
-    <div class="search-bar">
-      <img class="magnifying-img" src="images/searchicon.svg" alt="Magnifying glass"/>
-      <input class="bar" type="text" />
+    <div className="search-bar">
+      <img className="magnifying-img" src="images/searchicon.svg" alt="Magnifying glass"/>
+      <input className="bar" type="text" />
       
     </div>
   );
