@@ -28,8 +28,8 @@ function Navigation() {
     <div className="center-header">
       <div className="nav-bar-container">
         <div className="brand-mark">
-          <div className="brand-text">WE LIVE TOGETHER</div>
-          <span className="brand-subtext">KATY</span>
+          <div className="brand-text">GOOD <span><span className="O">O</span><span className="L">L</span><span className="D">D </span></span>KATY</div>
+          <span className="brand-subtext">Resource Hub</span>
         </div>
 
         <div className="banner-links-header">
