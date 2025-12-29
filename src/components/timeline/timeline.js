@@ -86,6 +86,8 @@ function Timeline() {
         alt="Katy Community"
         className="year-image"
       />
+
+      
     </div>
   );
 }
