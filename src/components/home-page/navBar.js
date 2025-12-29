@@ -7,7 +7,6 @@ import GooeyNav from "./GooeyNav";
 const NAV_ITEMS = [
   { label: "Home", to: "/" },
   { label: "Map", to: "/map" },
-  { label: "Events", to: "/events" },
   { label: "Timeline", to: "/timeline" }
 ];
 
@@ -55,6 +54,9 @@ function Navigation() {
 
               <option value="/resources">
                 Resources
+              </option>
+              <option value="/events">
+                Events
               </option>
               
             </select>
