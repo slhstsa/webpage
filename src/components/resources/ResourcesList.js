@@ -46,7 +46,12 @@ export default function ResourcesList() {
             <h2>Current Resources ({filtered.length})</h2>
             
             <div className="bar-wrapper"><div className="search-bar-this">
-                <img className="magnifying-img-this" src="images/searchicon.svg" alt="Magnifying glass"/>
+                <img
+  className="magnifying-img"
+  src={`${process.env.PUBLIC_URL}/images/searchicon.svg`}
+  alt="Magnifying glass"
+/>
+
                 <input type="text"
                     placeholder="Search resources…"
                     value={query}

@@ -17,7 +17,7 @@ function About() {
           </div>
         </div>
         <div className="about-image">
-          <img src="images/placeholder-image.png" alt="Katy Community" />
+          <img src={`${process.env.PUBLIC_URL}/images/placeholder-image.png`} alt="Katy Community" />
         </div>
       </div>
     </section>

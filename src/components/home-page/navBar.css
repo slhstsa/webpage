@@ -123,6 +123,24 @@
   color: rgba(205, 32, 39);
 }
 
+.more-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.more-dropdown select {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 8px 6px;
+  font-family: "DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.more-dropdown select:focus-visible {
+  outline: 2px solid rgba(205, 32, 39, 0.4);
+}
+
 .down-arrow {
   width: 22px;
   transition: transform 0.15s, margin-bottom 0.15s;

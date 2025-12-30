@@ -1,25 +1,32 @@
 import "./navBar.css";
 import Search from "./search";
-import { Link, useNavigate } from 'react-router-dom'; 
-import React, { useState } from 'react'; 
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import GooeyNav from "./GooeyNav";
 
 const NAV_ITEMS = [
   { label: "Home", to: "/" },
+  { label: "Resources", to: "/resources" },
+  { label: "Events", to: "/events" },
   { label: "Map", to: "/map" },
   { label: "Timeline", to: "/timeline" }
 ];
 
+const MORE_ITEMS = [
+  { label: "Documentation", to: "/documentation" },
+  { label: "Resources", to: "/resources" },
+  { label: "Events", to: "/events" }
+];
+
 function Navigation() {
   const navigate = useNavigate();
-  
-  const [dropdownValue, setDropdownValue] = useState(""); 
+  const [dropdownValue, setDropdownValue] = useState("");
 
   const select = (event) => {
     const path = event.target.value;
     if (path) {
       navigate(path);
-      setDropdownValue(""); 
+      setDropdownValue("");
     }
   };
 
@@ -37,28 +44,20 @@ function Navigation() {
 
         <div className="nav-actions">
           <Search />
-          <div className="banner-links-header">
-            <select 
-              className="header-link" 
-              onChange={select} 
-              value={dropdownValue} 
-              style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}
+          <div className="more-dropdown">
+            <select
+              className="header-link"
+              onChange={select}
+              value={dropdownValue}
             >
               <option value="" disabled>
-                More 
+                More
               </option>
-
-              <option value="/documentation">
-                Documentation
-              </option>
-
-              <option value="/resources">
-                Resources
-              </option>
-              <option value="/events">
-                Events
-              </option>
-              
+              {MORE_ITEMS.map(item => (
+                <option key={item.to} value={item.to}>
+                  {item.label}
+                </option>
+              ))}
             </select>
           </div>
         </div>
