@@ -10,15 +10,18 @@ function GooeyNav({
     particleR = 100,
     timeVariance = 300,
     colors = [1, 2, 3, 1, 2, 3, 1, 4],
-    initialActiveIndex = 0
+    initialActiveIndex = -1
 }) {
     const containerRef = useRef(null);
     const navRef = useRef(null);
     const filterRef = useRef(null);
     const textRef = useRef(null);
-    const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
     const navigate = useNavigate();
     const location = useLocation();
+    const [activeIndex, setActiveIndex] = useState(() => {
+        const current = items.findIndex(item => item.to === location.pathname);
+        return current >= 0 ? current : initialActiveIndex;
+    });
 
     const noise = (n = 1) => n / 2 - Math.random() * n;
 
@@ -140,7 +143,7 @@ function GooeyNav({
     };
 
     useEffect(() => {
-        if (!navRef.current || !containerRef.current) return;
+        if (!navRef.current || !containerRef.current || activeIndex < 0) return;
         const activeLi = navRef.current.querySelectorAll("li")[activeIndex];
         if (activeLi) {
             updateEffectPosition(activeLi);
@@ -161,11 +164,8 @@ function GooeyNav({
 
     useEffect(() => {
         const current = items.findIndex(item => item.to === location.pathname);
-        if (current >= 0 && current !== activeIndex) {
-            setActiveIndex(current);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [location.pathname]);
+        setActiveIndex(prev => (prev === current ? prev : current));
+    }, [location.pathname, items]);
 
     return (
         <div className="gooey-nav-container" ref={containerRef}>

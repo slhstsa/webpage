@@ -9,7 +9,7 @@ const timelineData = Array.from({ length: n }, (_, i) => ({
   title: `Placeholder Title ${i + 1}`,
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  image: "images/placeholder-image.png",
+  image: `${process.env.PUBLIC_URL}/images/placeholder-image.png`,
 }));
 
 function Timeline() {
