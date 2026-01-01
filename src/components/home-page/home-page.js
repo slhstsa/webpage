@@ -26,7 +26,6 @@ function Home() {
 
       <About />
 
-      <Featured />
     </>
   );
 }

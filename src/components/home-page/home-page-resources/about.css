@@ -1,40 +1,62 @@
 .about-section {
-  padding: 100px 40px;
   background-color: #dda15e;
   margin-top: 500px;
+  max-height: px;
 }
 
 .about-container {
-  max-width: 1100px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.about-text-area{
+  display: flex;
+  height: 100%;
+  width: 480px;
+  flex-direction: column;
   align-items: center;
+  justify-content: top;
 }
 
+.about-content{
+  display: flex;
+  justify-content: center;
+}
 .about-content h2 {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 38px;
-  color: #fff;
+  margin-top: 40px;
+  font-family: 'Yearbook Solid W01', 'Archivo Black', sans-serif;
+  
+  white-space: nowrap;
+  color: black;
+  font-size: 80px;
+  letter-spacing: 3px;
+  background-color: #606c38;
+  padding: 5px 8px 5px 8px;
+  border-radius: 4px;
+  border: 2px black solid;
+  box-shadow: 7px 7px rgba(0, 0, 0, 1);
   margin-bottom: 25px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .about-content p {
-  font-size: 16px;
+  font-size: 25px;
   line-height: 1.9;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 35px;
   max-width: 480px;
+  text-align: justify;
 }
 
 .stats-container {
   display: flex;
   gap: 50px;
   padding: 25px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  width: 100%;
+  border-top: 2px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .stat {
@@ -56,13 +78,29 @@
   letter-spacing: 1px;
 }
 
-.about-image img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+.about-image{
+  position: relative;
 }
+
+.katy-marker{
+  position: absolute;
+  opacity: 0;
+
+  width: 50px;
+  height: 50px;
+  bottom: 40%;
+  right: 20%;
+  transition: opacity .15s;
+}
+
+.katy-marker:hover{
+  opacity: 1;
+}
+.about-image img:first-child {
+  width: 100%;
+  height: 600px;
+  object-fit: fill;
+  }
 
 @media (max-width: 768px) {
   .about-section {
