@@ -1,7 +1,7 @@
 
 .tabs-section{
   padding: 0px 200px 0px 200px;
-  margin-bottom: 1000px;
+  margin-top: 50px;
 }
 .tabs{
   display: flex;
@@ -12,19 +12,26 @@
   display: none;
 }
 
-.tabs label{
-  padding: 25px;
+.tabs label {
+  padding: 10px 10px 7px 10px;
   background-color: #bc6c25;
   font-weight: bold;
-  transition: background-color 1s;
+  transition: background-color .1s;
   margin-bottom: 5px; 
   margin-right: 5px;
   border-radius: 2px;
   border: 1px solid black;
   box-shadow: 2px 2px rgb(0,0,0);
+  cursor: pointer;
+}
+.tabs label:hover{
+  background-color: #dda15e;
 }
 
+.tabs label img{
+  width:40px;
 
+}
 .tabs .tab{
   width: 100%;
   padding: 20px;
@@ -86,22 +93,32 @@
   justify-content: space-around;
 }
 
-.link-tab{
-  font-family: 'Yearbook Solid W01', 'Archivo Black', sans-serif;
-  width: 420px;
-  white-space: nowrap;
-  color: black;
-  font-size: 50px;
-  letter-spacing: 3px;
+.link-holder{
   background-color: #dda15e;
   padding: 5px 20px 5px 20px;
   border-radius: 4px;
   border: 2px black solid;
-  box-shadow: 7px 7px rgba(0, 0, 0, 1);
   margin-bottom: 25px;
-  text-decoration: none;
+  width: auto;
+  transition: box-shadow .15s;
   align-self: center;
 }
+
+.link-holder:hover{
+  box-shadow: 8px 8px rgba(0, 0, 0, 1);
+
+}
+.link-tab{
+  font-family: 'Yearbook Solid W01', 'Archivo Black', sans-serif;
+  
+  white-space: nowrap;
+  color: black;
+  font-size: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-decoration: none;
+}
+
 
 .right-area{
   width: 500px;
