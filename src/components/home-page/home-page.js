@@ -2,6 +2,7 @@ import About from "./home-page-resources/about";
 import Polaroid from "./home-page-resources/polaroid-pic";
 import RetroBanner from "./retro-banner";
 import "./home-page.css";
+import Tabbed from './home-page-resources/tabbed-section'
 import Featured from './home-page-resources/featured-resource'
 function Home() {
   const img = (p) => `${process.env.PUBLIC_URL}${p}`;
@@ -26,7 +27,7 @@ function Home() {
 
       <About />
 
-      <Featured />
+      <Tabbed />
     </>
   );
 }
