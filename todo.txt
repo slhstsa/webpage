@@ -7,3 +7,4 @@ Find images
 Write timeline and about section
 Fix timeline (it doesn't really match the theme)
 style the site (This is gonna be at the end)
+ 
