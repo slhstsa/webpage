@@ -6,7 +6,7 @@ function Tabbed(){
     <div className='tabs-section'>
       <div className='tabs'>
         <input type="radio" className="learn" id="tabLearn" name="mytabs" checked="checked" />
-        <label for="tabLearn">Learn</label>
+        <label for="tabLearn"><img src={`${process.env.PUBLIC_URL}/images/book-svgrepo-com.svg`} alt="Katy Community" /></label>
         <div class="tab">
           <div className='stupid-div'>
             <div class="left-area">
@@ -19,14 +19,16 @@ function Tabbed(){
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper.
               </p>
-              <Link to="/timeline" className='link-tab'>
-                View Timeline
-              </Link>
+              <div className='link-holder'>
+                <Link to="/timeline" className='link-tab'>
+                  View Timeline
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <input type="radio" id="tabSearch" name="mytabs" checked="checked" />
-        <label for="tabSearch">Search</label>
+        <input type="radio" id="tabSearch" name="mytabs" checked="unchecked" />
+        <label for="tabSearch"><img src={`${process.env.PUBLIC_URL}/images/searchicon.svg`} alt="Katy Community" /></label>
         <div class="tab">
           <div className='stupid-div'>
             <div class="left-area">
@@ -39,14 +41,16 @@ function Tabbed(){
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper.
               </p>
-              <Link to="/timeline" className='link-tab'>
-                View Resources
-              </Link>
+              <div className='link-holder'>
+                <Link to="/resources" className='link-tab'>
+                  Browse Resources
+                </Link>
+              </div>
             </div>
           </div>
         </div>   
-        <input type="radio" id="tabJoin" name="mytabs" checked="checked" />
-        <label for="tabJoin">Join</label>
+        <input type="radio" id="tabJoin" name="mytabs" checked="unchecked" />
+        <label for="tabJoin"><img src={`${process.env.PUBLIC_URL}/images/account-svgrepo-com.svg`} alt="Katy Community" /></label>
         <div class="tab">
           <div className='stupid-div'>
             <div class="left-area">
@@ -59,9 +63,11 @@ function Tabbed(){
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper.
               </p>
-              <Link to="/timeline" className='link-tab'>
-                make account
-              </Link>
+              <div className='link-holder'>
+                <Link to="/timeline" className='link-tab'>
+                  make account
+                </Link>
+              </div>
             </div>
           </div>  
         </div>           
