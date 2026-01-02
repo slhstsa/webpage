@@ -1,0 +1,29 @@
+.bar{
+  height: 10px;
+  
+  width: 200px;
+  padding: 15px 20px 10px 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: transparent;
+  border-bottom: 2px solid #1f1b16;
+  font-size: 17px;
+  margin-bottom: 7px;
+  font-family: 'DIN Condensed Web', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.bar:focus{
+  outline: none;
+  border-bottom-color: #c43e5c;
+}
+.search-bar{
+  width: 300px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.magnifying-img{
+  width: 30px;
+}

@@ -1,21 +1,23 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
 
-import './App.css';
-import Banner from './banner'
-import Navigation from './navBar'
-import Resources from './resource-grid';
-import About from './about' // lowk don't know why this is showing up as an error on my side. 
-                            // it works fine
+import Navigation from "./home-page/navBar";
+import Home from "./home-page/home-page";
+import EventsList from "./events/EventsList";
+import ResourcesList from "./resources/ResourcesList";
+import TimelineApp from "./timeline/timelineApp";
+
 function App() {
   return (
     <>
-    
       <Navigation />
-      
-      <Banner />
-
-      <Resources />
-    
-      <About />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<EventsList />} />
+        <Route path="/resources" element={<ResourcesList />} />
+        <Route path="/timeline" element={<TimelineApp />} />
+      </Routes>
     </>
   );
 }

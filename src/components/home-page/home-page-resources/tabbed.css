@@ -1,0 +1,119 @@
+
+.tabs-section{
+  padding: 0px 200px 0px 200px;
+  margin-bottom: 1000px;
+}
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+.tabs input[type="radio"]{
+  display: none;
+}
+
+.tabs label{
+  padding: 25px;
+  background-color: #bc6c25;
+  font-weight: bold;
+  transition: background-color 1s;
+  margin-bottom: 5px; 
+  margin-right: 5px;
+  border-radius: 2px;
+  border: 1px solid black;
+  box-shadow: 2px 2px rgb(0,0,0);
+}
+
+
+.tabs .tab{
+  width: 100%;
+  padding: 20px;
+  background: #bc6c25;
+  order: 1;
+  display: none;
+  height: 400px;
+  border-top: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 4px;
+  border: 2px solid black;
+
+  box-shadow: 7px 7px rgba(0, 0, 0, 1);
+}
+
+.tabs input[type="radio"]:checked + label + .tab{
+  display: block;
+
+}
+
+.tabs input[type='radio']:checked + label{
+  background-color: #606c38;
+}
+
+.left-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+
+.left-area h1{
+  margin-top: 25px;
+  font-family: 'Yearbook Solid W01', 'Archivo Black', sans-serif;
+  
+  white-space: nowrap;
+  color: black;
+  font-size: 150px;
+  letter-spacing: 3px;
+  background-color: #606c38;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
+  border: 2px black solid;
+  box-shadow: 7px 7px rgba(0, 0, 0, 1);
+  margin-bottom: 25px;
+}
+
+.left-area p{
+  align-self: center;
+  margin-top: 0px;
+  font-size: 25px;
+  font-family: "DIN Condensed Web";
+  color: black;
+}
+
+.stupid-div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-tab{
+  font-family: 'Yearbook Solid W01', 'Archivo Black', sans-serif;
+  width: 420px;
+  white-space: nowrap;
+  color: black;
+  font-size: 50px;
+  letter-spacing: 3px;
+  background-color: #dda15e;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
+  border: 2px black solid;
+  box-shadow: 7px 7px rgba(0, 0, 0, 1);
+  margin-bottom: 25px;
+  text-decoration: none;
+  align-self: center;
+}
+
+.right-area{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+
+.right-area p{
+  font-size: 24px;
+  color: black;
+  text-align: justify;
+}
+
