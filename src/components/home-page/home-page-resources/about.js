@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './about.css';
 
 function About() {
@@ -22,9 +23,18 @@ function About() {
           <img src={`${process.env.PUBLIC_URL}/images/texas.svg`} alt="Katy Community" />
           <img className="katy-marker"src={`${process.env.PUBLIC_URL}/images/katypin.svg`} alt="Community" />
         </div>
-        <div>
-          go to map button
+        <div className='right-section'>
+          <div className="katy-locate">
+            Can you find where Katy is located?
+          </div>
+          <div className='katy-link'>
+            <Link to="/map"className='link'>
+            See Katy Map
+            </Link>
+            <img src={`${process.env.PUBLIC_URL}/images/right-arrow.svg`} alt='right arrow' />
+          </div>
         </div>
+        
       </div>
     </section>
   );
