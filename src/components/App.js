@@ -7,6 +7,7 @@ import Home from "./home-page/home-page";
 import EventsList from "./events/EventsList";
 import ResourcesList from "./resources/ResourcesList";
 import TimelineApp from "./timeline/timelineApp";
+import Map from "./map/Map";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsList />} />
         <Route path="/resources" element={<ResourcesList />} />
+        <Route path="/map" element={<Map />} />
         <Route path="/timeline" element={<TimelineApp />} />
       </Routes>
     </>
