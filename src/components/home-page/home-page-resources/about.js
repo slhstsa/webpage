@@ -27,6 +27,7 @@ function About() {
           <div className="katy-locate">
             Can you find where Katy is located?
           </div>
+          
           <div className='katy-link'>
             <Link to="/map"className='link'>
             See Katy Map
