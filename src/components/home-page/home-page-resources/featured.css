@@ -1,81 +1,55 @@
-.featured-resource-container{ 
-    margin-bottom: 200px;
+.featured-resource-container{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1fr;
+    background-color: #dda15e;
+
+}
+.polaroid-holder{
+    display: flex;
+    justify-content: end;
+    transform: rotate(-7deg);
 }
 
-.featured-header{
-    font-family: Bebas Neue, Arial;
-    color: rgb(27 77 92);
-    letter-spacing: 1.8px;
-    margin-left: 50px;
-    margin-bottom: 0px;
-    font-size: 69.3px;
+.text-section{
+    display: flex;
+    flex-direction: column;
+
 }
 
-.featured-resource-content-box{
-    margin-top: 0px;
-    position: relative;
-    padding-bottom: 0;
-    width: fit-content;
+.flex-holder{
+    display: flex;
 }
 
-.featured-resource-image{
-    width: 800px;
-    margin-left: 250px;
-    border-radius: 25px;
-    height: 400px;
-    object-fit: cover;
+.flex-holder:first-child{
+  font-family: 'Yearbook Solid W01', 'Archivo Black', sans-serif;
+  
+  white-space: nowrap;
+  color: black;
+  font-size: 40px;
+  letter-spacing: 3px;
+  background-color: #606c38;
+  padding: 5px 8px 5px 8px;
+  border-radius: 4px;
+  border: 2px black solid;
+  box-shadow: 7px 7px rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
 
-.featured-resource-info-box{
-    position: absolute;
-    background-color: rgb(161 197 208);
-    top: 50%;
-    right: -375px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    padding: 5px 30px 0 20px;
+.next-button-container{
+    display: flex;
+    align-items: center;
 }
-
-.featured-resource-info-box:hover .resource-name{
-    color: white;
+.next-button-container button{
+    height: 60%;
+    width: 70px;
+    background-color: #606c38;
+    padding: 5px 8px 5px 8px;
+    border-radius: 4px;
+    border: 2px black solid;
+    box-shadow: 7px 7px rgba(0, 0, 0, 1);
+    align-self: center;
 }
-
-.school-name-presents{
-    font-family: 'Courier New', Courier, monospace;
-    color: rgba(27, 77, 92, 0.85);
-    font-size: 16px;
-    letter-spacing: -.3px;
-    margin-bottom: -13px;
+.next-button-container button img{
+    width: 100%;
+    transform: rotate(-90deg);
 }
-
-.resource-name{
-    margin-top: 0;
-    font-family: Bebas Neue;
-    color: #37616e;
-    font-size: 75px;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-    transition: color .15s;
-}
-
-.resource-info{
-    margin-top: -25px;
-    margin-left: 5px;
-    margin-bottom: 0;
-    letter-spacing: .6px;
-    font-family: Bebas Neue;
-    color: rgba(27, 77, 92, 0.85);
-    font-size: 22.5px;
-    
-}
-
-.resource-text{
-    color: #00384a;
-    font-family: Bebas Neue;
-    font-size: 30px;
-    margin-top: 8px;
-    line-height: 35px;
-    margin-bottom: 15px;
-}
-
-            

@@ -24,8 +24,10 @@ function Home() {
           <Polaroid imageurl={img("/images/katy-stock.jpg")} text="join" />
         </div>
       </div>
-      <Tabbed />
       <About />
+      
+      <Tabbed />
+      <Featured />
 
       
     </>
