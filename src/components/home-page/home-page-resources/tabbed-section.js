@@ -64,8 +64,8 @@ function Tabbed(){
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper aliquam diam, at facilisis leo posuere a. Donec faucibus dui sit amet rutrum semper.
               </p>
               <div className='link-holder'>
-                <Link to="/timeline" className='link-tab'>
-                  make account
+                <Link to="/events" className='link-tab'>
+                  view community
                 </Link>
               </div>
             </div>

@@ -4,6 +4,7 @@ import RetroBanner from "./retro-banner";
 import "./home-page.css";
 import Tabbed from './home-page-resources/tabbed-section'
 import Featured from './home-page-resources/featured-resource'
+
 function Home() {
   const img = (p) => `${process.env.PUBLIC_URL}${p}`;
 
