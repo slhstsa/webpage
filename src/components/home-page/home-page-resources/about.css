@@ -1,7 +1,6 @@
 .about-section {
   background-color: #dda15e;
   margin-top: 100px;
-  max-height: px;
 }
 
 .about-container {
@@ -170,7 +169,7 @@
   cursor: pointer;
 }
 
-.link{
+.plink{
   text-decoration: none;
   
   color: black;
@@ -186,7 +185,7 @@
   transform: rotate(90deg);
 }
 
-.link:hover{
+.plink:hover{
   color:white;
 }
 .katy-link img {

@@ -43,7 +43,6 @@ function Navigation() {
         </div>
 
         <div className="nav-actions">
-          <Search />
           <div className="more-dropdown">
             <select
               className="header-link"

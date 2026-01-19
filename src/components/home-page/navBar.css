@@ -20,9 +20,9 @@
   padding: 3px 18px;
 
   border-bottom: 3px solid #000;
-  background: rgba(254, 250, 224, 0.9);
+  background: rgba(254, 250, 224, 1);
   backdrop-filter: blur(6px);
-  
+
 
 
   position: relative;
@@ -44,7 +44,7 @@
 
 .brand-text {
   font-family: 'Yearbook Solid W01',"DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 0.06em;
 }
 
@@ -60,7 +60,7 @@
 
 .brand-subtext {
   font-family: "DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 
@@ -76,7 +76,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  min-width: 260px;
+  min-width: 100px;
   justify-content: flex-end;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .header-link:hover {
-  color: rgba(205, 32, 39);
+  color: #606c38;
 }
 
 .more-dropdown {
@@ -138,7 +138,7 @@
 }
 
 .more-dropdown select:focus-visible {
-  outline: 2px solid rgba(205, 32, 39, 0.4);
+  outline: 2px solid #606c38;
 }
 
 .down-arrow {
@@ -167,8 +167,10 @@
 
 @keyframes navBarGrow {
   100%{
-    border: 3px solid #000;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    border: 2px solid #000;
+    border-radius: 3px;
+    
+    box-shadow: 2px 3px  rgba(0, 0, 0, 1);
     margin-top: 5px;
   }
   
