@@ -1,6 +1,6 @@
 .featured-resource-container{
     display: grid;
-    grid-template-columns: 1.5fr 3fr .75fr;
+    grid-template-columns: 1.5fr 2.5fr .75fr;
     background-color: #dda15e;
     margin-top: 50px;
     padding-bottom: 30px;
@@ -12,14 +12,14 @@
 
 .featured-info h2{
     font-family: "DIN Condensed Web";
-    font-size: 100px;
-    margin-top: 0px;
+    font-size: 90px;
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 
 .featured-info p{
     margin-top: -10px;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 20px;
     margin-bottom: 10px;
 
@@ -51,10 +51,11 @@
     margin-left: 20px;
     justify-self: center;
 }
-.text-header{
+.text-header-please{
     font-family: "Yearbook Solid W01";
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
+    white-space: nowrap;
     margin-top: 50px;
     background-color: #bc6c25;
     margin-left: 70px;
@@ -68,6 +69,7 @@
     display: flex;
     justify-content: end;
     transform: rotate(-7deg);
+    margin-top: 20px;
 }
 
 .text-section{
@@ -138,5 +140,5 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 50px;
 }

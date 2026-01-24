@@ -13,7 +13,7 @@
 .about-text-area{
   display: flex;
   height: 100%;
-  width: 480px;
+  width: 400px;
   flex-direction: column;
   align-items: center;
   justify-content: top;
@@ -41,12 +41,12 @@
 }
 
 .about-content p {
-  font-size: 25px;
-  line-height: 1.9;
-  color: rgba(255, 255, 255, 0.95);
+  font-size: 28px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.95);
   margin-bottom: 35px;
   max-width: 480px;
-  text-align: justify;
+  text-align: left;
 }
 
 .stats-container {

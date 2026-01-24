@@ -1,6 +1,6 @@
 
 .tabs-section{
-  padding: 0px 200px 0px 200px;
+  padding: 0px 100px 0px 100px;
   margin-top: 50px;
 }
 .tabs{
@@ -126,6 +126,7 @@
   flex-direction: column;
   justify-content: center;
   height: 400px;
+  padding-left: 20px;
 }
 
 .right-area p{
