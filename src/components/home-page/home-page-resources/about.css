@@ -1,7 +1,6 @@
 .about-section {
   background-color: #dda15e;
   margin-top: 100px;
-  max-height: px;
 }
 
 .about-container {
@@ -85,7 +84,8 @@
 .katy-marker{
   position: absolute;
   opacity: 0;
-
+  
+  cursor: pointer;
   width: 50px;
   height: 50px;
   bottom: 40%;
@@ -159,24 +159,36 @@
   padding: 5px 8px 5px 8px;
   border-radius: 4px;
   border: 2px black solid;
-  box-shadow: 7px 7px rgba(0, 0, 0, 1);
+  
   margin-bottom: 25px;
   width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: box-shadow ease-out .25s;
+  cursor: pointer;
 }
 
-.link{
+.plink{
   text-decoration: none;
   
   color: black;
   font-size: 22px;
   letter-spacing: 3px;
+  transition: color .3s;
 }
 
+.katy-link:hover{
+ box-shadow: 6px 6px rgba(0, 0, 0, 1);
+}
+.katy-link:hover img{
+  transform: rotate(90deg);
+}
 
-
+.plink:hover{
+  color:white;
+}
 .katy-link img {
   height: 30px;
+  transition: transform ease-in .15s;
 }

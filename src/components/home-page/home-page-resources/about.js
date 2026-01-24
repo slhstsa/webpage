@@ -27,8 +27,9 @@ function About() {
           <div className="katy-locate">
             Can you find where Katy is located?
           </div>
+          
           <div className='katy-link'>
-            <Link to="/map"className='link'>
+            <Link to="/map"className='plink'>
             See Katy Map
             </Link>
             <img src={`${process.env.PUBLIC_URL}/images/right-arrow.svg`} alt='right arrow' />
