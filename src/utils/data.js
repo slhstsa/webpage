@@ -1,7 +1,6 @@
 import rawEvents from "../data/events.json";
 import rawResources from "../data/resources.json";
 import rawHighlights from "../data/highlights.json";
-import { expandEvents } from "./expandEvents";
 
 export function onlyPublished(items) {
   return (items || []).filter((x) => x && x.status === "published");
@@ -18,19 +17,7 @@ export function sortByStart(items) {
   });
 }
 
-function addDays(d, n) {
-  const x = new Date(d);
-  x.setDate(x.getDate() + n);
-  return x;
-}
-
-// for 2026 year 
-const rangeStart = new Date();
-const rangeEnd = addDays(new Date(), 365);
-
-const expanded = expandEvents(rawEvents, rangeStart, rangeEnd);
-
-export const events = sortByStart(onlyPublished(expanded));
+export const events = sortByStart(onlyPublished(rawEvents));
 
 export const resources = rawResources;
 export const highlights = rawHighlights;

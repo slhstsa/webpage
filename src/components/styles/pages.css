@@ -95,6 +95,7 @@
   align-items: center;
 }
 
+.magnifying-img,
 .magnifying-img-this{
   width: 30px;
 }
@@ -157,4 +158,32 @@
 
 .info-card .muted {
   opacity: 0.8;
+}
+
+.page-cta-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.page-cta {
+  text-decoration: none;
+  color: var(--text-main);
+  border: 2px solid var(--accent);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: "DIN Condensed Web";
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  background: rgba(255, 255, 255, 0.65);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.page-cta:hover {
+  transform: translateY(-1px);
+  background: var(--accent-soft);
+  box-shadow: 0 12px 20px rgba(196, 62, 92, 0.2);
 }
