@@ -2,7 +2,6 @@ To-do list:
 Map Page
 Query (suggestion) section
 Featured show
-Create an account + Community tab
 Find images
 Write timeline and about section
 Fix timeline (it doesn't really match the theme)
