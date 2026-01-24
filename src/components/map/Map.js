@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import "./Map.css";
 
@@ -14,18 +14,18 @@ const center = {
 };
 
 function Map() {
-  const [loadError, setLoadError] = React.useState(null);
+  const [loadError, setLoadError] = useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
+  const onLoad = useCallback(function callback(map) {
     console.log('Map loaded successfully');
     setLoadError(null);
   }, []);
 
-  const onUnmount = React.useCallback(function callback(map) {
+  const onUnmount = useCallback(function callback(map) {
     console.log('Map unmounted');
   }, []);
 
-  const onError = React.useCallback(function callback(error) {
+  const onError = useCallback(function callback(error) {
     console.error('Google Maps error:', error);
     setLoadError(error);
   }, []);
@@ -47,7 +47,7 @@ function Map() {
           >
             <Marker
               position={center}
-              title="Sample Location"
+              title="Katy, TX"
             />
           </GoogleMap>
         </LoadScript>
