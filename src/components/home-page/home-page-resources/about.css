@@ -220,3 +220,33 @@
     width: auto;
   }
 }
+
+@media (max-width: 520px) {
+  .about-section {
+    margin-top: 60px;
+    padding: 40px 16px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+
+  .right-section {
+    gap: 16px;
+  }
+
+  .katy-locate {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-size: 26px;
+  }
+
+  .katy-link {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .about-image img:first-child {
+    height: 280px;
+  }
+}

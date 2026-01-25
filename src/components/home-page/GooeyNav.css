@@ -262,3 +262,27 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 520px) {
+  .gooey-nav-container nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gooey-nav-container nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+    column-gap: 12px;
+    overflow-x: visible;
+    padding: 0 0.25em;
+  }
+
+  .gooey-nav-container nav ul li a {
+    padding: 0.4em 0.7em;
+  }
+
+  .gooey-nav-container .effect {
+    display: none;
+  }
+}

@@ -12,3 +12,17 @@
     padding: 0 16px 16px;
   }
 }
+
+@media (max-width: 600px) {
+  .polaroid-string {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .polaroid-string {
+    margin-top: 22px;
+    position: relative;
+    z-index: 1;
+  }
+}
