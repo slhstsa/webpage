@@ -66,8 +66,24 @@ function Documentation() {
           <section className="doc-card">
             <h2 className="doc-heading">Documentation</h2>
             <ul className="doc-list doc-muted">
-              <li>Plan of Work Log</li>
-              <li>Copyright Checklist</li>
+              <li>
+                <a
+                  href={`${process.env.PUBLIC_URL}/documentaton/Webmaster%20Plan%20of%20Work%20log.pdf`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Plan of Work Log
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`${process.env.PUBLIC_URL}/documentaton/Webmaster%202025-2026%20Copyright%20Checklist.pdf`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Copyright Checklist
+                </a>
+              </li>
             </ul>
           </section>
         </div>
