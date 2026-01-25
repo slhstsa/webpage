@@ -20,3 +20,15 @@
   color:#606c38;
   font-size: 80px;
 }
+
+@media (max-width: 520px) {
+  .polaroid-container {
+    width: 240px;
+    height: 240px;
+    padding: 16px 16px 90px 16px;
+  }
+
+  .polaroid-text {
+    font-size: 56px;
+  }
+}

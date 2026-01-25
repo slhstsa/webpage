@@ -167,6 +167,16 @@ function GooeyNav({
         setActiveIndex(prev => (prev === current ? prev : current));
     }, [location.pathname, items]);
 
+    useEffect(() => {
+        if (!textRef.current || !filterRef.current) return;
+        const hasActive = activeIndex >= 0;
+        textRef.current.style.opacity = hasActive ? "1" : "0";
+        filterRef.current.style.opacity = hasActive ? "1" : "0";
+        if (!hasActive) {
+            textRef.current.innerText = "";
+        }
+    }, [activeIndex]);
+
     return (
         <div className="gooey-nav-container" ref={containerRef}>
             <nav>

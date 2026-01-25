@@ -4,7 +4,8 @@ import "./Map.css";
 
 const containerStyle = {
   width: '100%',
-  height: '700px'
+  height: '70vh',
+  minHeight: '420px'
 };
 
 // Default center coordinates (Katy, TX)
