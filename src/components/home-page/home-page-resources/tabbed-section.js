@@ -5,7 +5,7 @@ function Tabbed(){
   return(
     <div className='tabs-section'>
       <div className='tabs'>
-        <input type="radio" className="learn" id="tabLearn" name="mytabs" checked />
+        <input type="radio" id="tabLearn" checked="checked" name="mytabs" />
         <label for="tabLearn"><img src={`${process.env.PUBLIC_URL}/images/book-svgrepo-com.svg`} alt="Katy Community" /></label>
         <div className="tab">
           <div className='stupid-div'>
@@ -27,7 +27,7 @@ function Tabbed(){
             </div>
           </div>
         </div>
-        <input type="radio" id="tabSearch" name="mytabs" />
+        <input type="radio" id="tabSearch" name="mytabs" checked="unchecked"/>
         <label for="tabSearch"><img src={`${process.env.PUBLIC_URL}/images/searchicon.svg`} alt="Katy Community" /></label>
         <div className="tab">
           <div className='stupid-div'>
@@ -49,7 +49,7 @@ function Tabbed(){
             </div>
           </div>
         </div>   
-        <input type="radio" id="tabJoin" name="mytabs" />
+        <input type="radio" id="tabJoin" name="mytabs" checked="unchecked"/>
         <label for="tabJoin"><img src={`${process.env.PUBLIC_URL}/images/account-svgrepo-com.svg`} alt="Katy Community" /></label>
         <div className="tab">
           <div className='stupid-div'>
