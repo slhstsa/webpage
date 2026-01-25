@@ -1,7 +1,6 @@
 .about-section {
   background-color: #dda15e;
   margin-top: 100px;
-  max-height: px;
 }
 
 .about-container {
@@ -14,7 +13,7 @@
 .about-text-area{
   display: flex;
   height: 100%;
-  width: 480px;
+  width: min(420px, 100%);
   flex-direction: column;
   align-items: center;
   justify-content: top;
@@ -42,12 +41,12 @@
 }
 
 .about-content p {
-  font-size: 25px;
-  line-height: 1.9;
-  color: rgba(255, 255, 255, 0.95);
+  font-size: 28px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.95);
   margin-bottom: 35px;
   max-width: 480px;
-  text-align: justify;
+  text-align: left;
 }
 
 .stats-container {
@@ -117,6 +116,15 @@
     font-size: 30px;
   }
 
+  .about-content p {
+    font-size: 20px;
+  }
+
+  .about-text-area {
+    width: 100%;
+    align-items: flex-start;
+  }
+
   .stats-container {
     flex-wrap: wrap;
     justify-content: center;
@@ -170,7 +178,7 @@
   cursor: pointer;
 }
 
-.link{
+.plink{
   text-decoration: none;
   
   color: black;
@@ -186,10 +194,29 @@
   transform: rotate(90deg);
 }
 
-.link:hover{
+.plink:hover{
   color:white;
 }
 .katy-link img {
   height: 30px;
   transition: transform ease-in .15s;
+}
+
+@media (max-width: 768px) {
+  .about-image img:first-child {
+    height: 360px;
+  }
+
+  .right-section {
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .katy-locate {
+    font-size: 32px;
+  }
+
+  .katy-link {
+    width: auto;
+  }
 }

@@ -1,5 +1,17 @@
 import React, { useMemo, useState } from "react";
 import { events } from "../../utils/data";
+import "../styles/pages.css";
+
+const KATY_EVENTS_URL = "https://www.katy.com/events/";
+const DAY_LABELS = {
+  SU: "Sunday",
+  MO: "Monday",
+  TU: "Tuesday",
+  WE: "Wednesday",
+  TH: "Thursday",
+  FR: "Friday",
+  SA: "Saturday",
+};
 
 function toDateLabel(iso) {
   try {
@@ -9,14 +21,56 @@ function toDateLabel(iso) {
   }
 }
 
+function toHref(url) {
+  if (!url) return "";
+  if (/^https?:\/\//i.test(url)) return url;
+  return `https://${url}`;
+}
+
+function formatDayLabel(day) {
+  if (!day) return "";
+  const key = String(day).toUpperCase();
+  return DAY_LABELS[key] || day;
+}
+
+function formatDayList(days) {
+  const labels = (days || []).map(formatDayLabel).filter(Boolean);
+  if (!labels.length) return "";
+  if (labels.length === 1) return labels[0];
+  if (labels.length === 2) return `${labels[0]} and ${labels[1]}`;
+  return `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]}`;
+}
+
+function recurrenceLabel(recurrence) {
+  if (!recurrence || !Array.isArray(recurrence.byDay)) return "";
+  const dayText = formatDayList(recurrence.byDay);
+  if (!dayText) return "";
+  return `Repeats: ${dayText}`;
+}
+
 export default function EventsList() {
-  const [q, setQ] = useState("");
+  const [category, setCategory] = useState("All Categories");
+  const [location, setLocation] = useState("All Locations");
+  const [query, setQuery] = useState("");
+
+  const categories = [
+    "All Categories",
+    ...new Set(events.map((e) => e.category).filter(Boolean)),
+  ];
+  const locations = [
+    "All Locations",
+    ...new Set(events.map((e) => e.locationName).filter(Boolean)),
+  ];
 
   const filtered = useMemo(() => {
-    const s = q.trim().toLowerCase();
-    if (!s) return events;
+    const s = query.trim().toLowerCase();
 
     return events.filter((e) => {
+      const okCategory =
+        category === "All Categories" || e.category === category;
+      const okLocation =
+        location === "All Locations" || e.locationName === location;
+
       const hay = [
         e.title,
         e.locationName,
@@ -29,96 +83,110 @@ export default function EventsList() {
         .join(" ")
         .toLowerCase();
 
-      return hay.includes(s);
+      const okQuery = !s || hay.includes(s);
+
+      return okCategory && okLocation && okQuery;
     });
-  }, [q]);
+  }, [category, location, query]);
 
   return (
-    <div style={{ padding: "24px" }}>
-      <h2 style={{ marginBottom: 12 }}>Events ({filtered.length})</h2>
+    <div className="page-wrapper">
+      <h1>
+        Browse Over 
+        <span className="hundred">
+          <span className="one"> 2</span>
+          <span className="zero">0</span>
+          <span className="zero-second"></span>
+        </span> 
+        Events
+      </h1>
+      <h2>Upcoming Events ({filtered.length})</h2>
 
-      <input
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        placeholder="Search events..."
-        style={{ padding: "8px 10px", width: 320, maxWidth: "100%" }}
-      />
+      <div className="bar-wrapper">
+        <div className="search-bar-this">
+          <img
+            className="magnifying-img"
+            src={`${process.env.PUBLIC_URL}/images/searchicon.svg`}
+            alt="Magnifying glass"
+          />
+          <input
+            type="text"
+            placeholder="Search events..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className="bar-this"
+          />
+        </div>
+      </div>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-          gap: 16,
-          marginTop: 16,
-        }}
-      >
-        {filtered.map((e) => (
-          <div
-            key={e.id}
-            style={{
-              background: "#fff",
-              borderRadius: 12,
-              padding: 14,
-              boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
-            }}
-          >
-            <div style={{ fontWeight: 800, marginBottom: 6 }}>{e.title}</div>
+      <div className="filter-bar">
+        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+          {categories.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
 
-            <div style={{ fontSize: 13, opacity: 0.85 }}>
-              {toDateLabel(e.start)}
-            </div>
+        <select value={location} onChange={(e) => setLocation(e.target.value)}>
+          {locations.map((l) => (
+            <option key={l} value={l}>
+              {l}
+            </option>
+          ))}
+        </select>
+      </div>
 
-            <div style={{ fontSize: 13, marginTop: 6 }}>
-              <div>
-                <b>Where:</b> {e.locationName}
+      <div className="card-grid">
+        {filtered.map((e) => {
+          const href = toHref(e.website || e.url || KATY_EVENTS_URL);
+          const Wrapper = href ? "a" : "div";
+          const repeats = recurrenceLabel(e.recurrence);
+
+          return (
+            <Wrapper
+              key={e.id}
+              className="card-link"
+              {...(href ? { href, target: "_blank", rel: "noreferrer" } : {})}
+            >
+              <div className={`info-card ${href ? "clickable" : ""}`}>
+                <div className="top-row">
+                  <div style={{ fontWeight: 700 }}>{e.title}</div>
+                  <div className="muted">{e.category}</div>
+                </div>
+
+                <div className="muted">{toDateLabel(e.start)}</div>
+                {repeats ? <div className="muted">{repeats}</div> : null}
+
+                {e.locationName ? (
+                  <div className="muted">{e.locationName}</div>
+                ) : null}
+                {e.address ? <div className="muted">{e.address}</div> : null}
+
+                {e.tags && e.tags.length ? (
+                  <div className="pill-row">
+                    {e.tags.slice(0, 6).map((t) => (
+                      <span key={t} className="pill">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+
+                <div className="meta-row">
+                  <div className="muted">
+                    {e.cost ? <span>Cost: {e.cost}</span> : null}
+                  </div>
+                  {href ? (
+                    <span style={{ color: "var(--accent)" }}>
+                      View details
+                    </span>
+                  ) : null}
+                </div>
               </div>
-              {e.address ? (
-                <div style={{ opacity: 0.8 }}>{e.address}</div>
-              ) : null}
-            </div>
-
-            {e.tags && e.tags.length ? (
-              <div
-                style={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: 6,
-                  marginTop: 10,
-                }}
-              >
-                {e.tags.slice(0, 6).map((t) => (
-                  <span
-                    key={t}
-                    style={{
-                      fontSize: 12,
-                      padding: "4px 8px",
-                      borderRadius: 999,
-                      background: "rgba(0,0,0,0.06)",
-                    }}
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-            ) : null}
-
-            <div style={{ marginTop: 10, fontSize: 13 }}>
-              {e.url ? (
-  <div style={{ marginTop: 10, fontSize: 13 }}>
-    <a
-      href={e.url}
-      target="_blank"
-      rel="noreferrer"
-      style={{ textDecoration: "underline" }}
-    >
-      View details
-    </a>
-  </div>
-) : null}
-
-            </div>
-          </div>
-        ))}
+            </Wrapper>
+          );
+        })}
       </div>
     </div>
   );

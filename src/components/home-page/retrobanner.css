@@ -1,7 +1,11 @@
-h1{
+.PLEASE{
   font-family: 'Yearbook Solid W01';
   letter-spacing: 3px;
-  font-size: 225px;
+  font-size: 190px;
+  white-space: nowrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
