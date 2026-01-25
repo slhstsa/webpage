@@ -9,7 +9,17 @@
   padding-top: 80px;
 	overscroll-behavior: contain;
 }
-
+.content-card h2{
+  font-family: 'Yearbook Solid W01';
+  letter-spacing: 2px;
+  font-size: 40px;
+  color:#606c38;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.content-card p{
+  font-weight: bold;
+}
 .content-box {
   position: absolute;
   top: 40px; 
@@ -23,16 +33,18 @@
   font-family: "DIN Condensed Web";
   font-size: 3rem;
   color: #bc6c25; 
-  /*margin-bottom: 20px;*/
   margin-top: 5px; 
   width: 600px;  
   margin-left: 50%; 
   transform: translateX(-50%);
 }
 
+.fun-fact{
+  font-size: 10px;
+}
 .content-card {
   background: white;
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
@@ -46,6 +58,8 @@
   width: 1600px; 
   height: 1600px;
   border-radius: 50%;
+  background-color: #bc6b2532;
+  background-color: rgba(0);
   border: 3px solid #606c38;
   
   top: 300px; 
@@ -110,13 +124,16 @@
 .timeline-item.active .timeline-date {
   color: #bc6c25;
   font-size: 1.3rem;
-  top: -35px; 
+  top: -35px;
+  display: none; 
 }
 
 .year-image {
     height:150px; 
     width:auto; 
     margin-top: 415px;
+    border-radius: 25px;
+    z-index: 2;
 }
 
 @media (max-width: 1200px) {
@@ -146,7 +163,7 @@
 
   .year-image {
     height: 120px;
-    margin-top: 250px;
+    margin-top: 350px;
   }
 }
 

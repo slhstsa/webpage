@@ -11,7 +11,7 @@ const NAV_ITEMS = [
 ];
 
 const MORE_ITEMS = [
-  { label: "Documentation", to: "/documentation" },
+  { label: "References", to: "/documentation" },
   { label: "Resources", to: "/resources" },
   { label: "Events", to: "/events" }
 ];

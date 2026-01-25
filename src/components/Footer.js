@@ -12,9 +12,16 @@ function Footer(){
           <div className="email-input">
           <input id="suggestion-bar" className="join-bar" type="text" placeholder='Suggest here!' /> 
           <button onClick={() =>{
+            let x = document.getElementById("suggestion-bar");
+            if(x.value == "")
+            {
+              x.placeholder = "Please submit a resource"
+            }
+            else{
             document.getElementById("suggestion-bar").value = "";
             document.getElementById("suggestion-bar").placeholder = "Thank you!";
             document.getElementById("suggestion-bar").disabled = true;
+            }
           }} className='join-button'>SEND</button>
           </div>
           <p>
