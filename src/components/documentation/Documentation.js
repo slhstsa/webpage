@@ -112,6 +112,11 @@ function Documentation() {
           <h2 className="doc-heading">Sources</h2>
           <ul className="doc-list doc-sources">
             <li>
+              <a href="https://www.cityofkaty.com/about/city-history" target="_blank" rel="noreferrer">
+                Katy, TX History Source (City of Katy)
+              </a>
+            </li>
+            <li>
               <a href="https://www.shutterstock.com/image-photo/katy-tx-view-air-drone-2277819783" target="_blank" rel="noreferrer">
                 Katy, TX aerial view (Shutterstock)
               </a>
