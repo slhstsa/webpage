@@ -1,16 +1,60 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./timeline.css";
 
-const n = 8;
+const tsaImage = `${process.env.PUBLIC_URL}/images/tsa-logo.png`;
 
-const timelineData = Array.from({ length: n }, (_, i) => ({
-  id: i,
-  year: `202${i}`,
-  title: `Placeholder Title ${i + 1}`,
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  image: `${process.env.PUBLIC_URL}/images/placeholder-image.png`,
-}));
+const timelineData = [
+  {
+    id: 0,
+    year: "1893",
+    title: "Railroad Beginnings",
+    description:
+      "Katy is founded as a railroad stop along the Missouri-Kansas-Texas (MKT) Railroad.",
+    image: tsaImage,
+  },
+  {
+    id: 1,
+    year: "Early 1900s",
+    title: "Rice Capital of the World",
+    description:
+      "Irrigation and farming take off, earning Katy its long-running rice capital nickname.",
+    image: tsaImage,
+  },
+  {
+    id: 2,
+    year: "1940s-1950s",
+    title: "Agriculture Shifts",
+    description:
+      "Rice farming declines and the local economy begins transitioning beyond agriculture.",
+    image: tsaImage,
+  },
+  {
+    id: 3,
+    year: "1970s",
+    title: "Interstate 10 Growth",
+    description:
+      "Construction of Interstate 10 accelerates suburban development and regional access.",
+    image: tsaImage,
+  },
+  {
+    id: 4,
+    year: "1990s-2000s",
+    title: "Master-Planned Boom",
+    description:
+      "Rapid population growth leads to major expansion and master-planned communities.",
+    image: tsaImage,
+  },
+  {
+    id: 5,
+    year: "2010s-Present",
+    title: "Continued Urban Growth",
+    description:
+      "Katy continues to grow with new neighborhoods, businesses, and community services.",
+    image: tsaImage,
+  },
+];
+
+const n = timelineData.length;
 
 function Timeline() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -83,7 +127,7 @@ function Timeline() {
 
       <img
         src={timelineData[activeIndex].image}
-        alt="Katy Community"
+        alt="TSA logo"
         className="year-image"
       />
 

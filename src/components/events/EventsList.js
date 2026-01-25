@@ -91,19 +91,16 @@ export default function EventsList() {
 
   return (
     <div className="page-wrapper">
-      <h1>Local Events</h1>
+      <h1>
+        Browse Over 
+        <span className="hundred">
+          <span className="one"> 2</span>
+          <span className="zero">0</span>
+          <span className="zero-second"></span>
+        </span> 
+        Events
+      </h1>
       <h2>Upcoming Events ({filtered.length})</h2>
-
-      <div className="page-cta-row">
-        <a
-          className="page-cta"
-          href={KATY_EVENTS_URL}
-          target="_blank"
-          rel="noreferrer"
-        >
-          View the full Katy events calendar
-        </a>
-      </div>
 
       <div className="bar-wrapper">
         <div className="search-bar-this">

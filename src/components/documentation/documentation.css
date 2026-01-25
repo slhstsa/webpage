@@ -1,0 +1,175 @@
+.documentation-page {
+  padding: 48px 24px 80px;
+}
+
+.documentation-page h1 {
+  font-size: clamp(52px, 8vw, 110px);
+  margin: 0 0 12px;
+  letter-spacing: 3px;
+  font-family: "Yearbook Solid W01", "Archivo Black", sans-serif;
+}
+
+.doc-title-accent {
+  color: #606c38;
+}
+
+.documentation-hero {
+  text-align: center;
+  margin: 16px auto 44px;
+  max-width: 860px;
+}
+
+.doc-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  margin: 0 0 8px;
+  color: #606c38;
+  font-weight: 700;
+}
+
+.doc-highlight {
+  color: #c43e5c;
+}
+
+.doc-subtitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #5c4c3b;
+  font-family: "DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
+}
+
+.documentation-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.doc-card {
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid #1f1b16;
+  padding: 24px 28px;
+  border-radius: 8px;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.12);
+}
+
+.doc-heading {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 6px 12px;
+  border: 2px solid #1f1b16;
+  border-radius: 4px;
+  background: #606c38;
+  color: #fefae0;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-family: "Yearbook Solid W01", "Archivo Black", sans-serif;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.doc-card p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #2d251c;
+  font-family: "DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
+}
+
+.doc-lead {
+  margin-bottom: 16px;
+}
+
+.doc-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.doc-columns {
+  display: grid;
+  gap: 24px;
+}
+
+.doc-columns h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #bc6c25;
+  font-family: "DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
+}
+
+.doc-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  color: #2d251c;
+  font-family: "DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
+}
+
+.doc-list a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #c43e5c;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.doc-list a:hover {
+  color: #c43e5c;
+}
+
+.doc-muted {
+  opacity: 0.6;
+}
+
+.doc-sources {
+  display: block;
+  column-count: 2;
+  column-gap: 24px;
+}
+
+.doc-sources li {
+  break-inside: avoid;
+  margin-bottom: 10px;
+}
+
+.doc-fineprint {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #5c4c3b;
+}
+
+@media (min-width: 860px) {
+  .doc-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .doc-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .doc-sources {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .documentation-page {
+    padding: 32px 16px 60px;
+  }
+
+  .doc-card {
+    padding: 20px 18px;
+  }
+
+  .doc-heading {
+    font-size: 22px;
+  }
+}
