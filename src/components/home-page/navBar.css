@@ -29,15 +29,11 @@
 
   animation:  navBarGrow linear forwards;
   animation-timeline: view();
-  animation-range-start: 100vh;
-  animation-range-end: 110vh;
-  transition: padding 0.2s ease, height 0.2s ease, box-shadow 0.2s ease;
+  animation-range-start: 110vh;
+  animation-range-end: 120vh;
 }
 
 .nav-bar-container.compact {
-  height: 52px;
-  padding: 2px 14px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 
