@@ -1,11 +1,19 @@
 .polaroid-string{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 20px;
   padding: 0 24px 24px;
+  
+  animation: popup 1s ease-out  forwards;
 }
 
+@keyframes popup
+{
+  100%{
+    gap: 100px
+  }
+}
 @media (max-width: 600px) {
   .polaroid-string {
     gap: 18px;
