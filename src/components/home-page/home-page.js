@@ -22,7 +22,7 @@ function Home() {
         </div>
 
         <div style={{ transform: "rotate(7deg)" }}>
-          <Polaroid imageurl={img("/images/katy-stock.jpg")} text="join" />
+          <Polaroid imageurl={img("/images/katy-tx.jpg")} text="join" />
         </div>
       </div>
       <About />

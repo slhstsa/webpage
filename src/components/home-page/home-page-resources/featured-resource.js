@@ -33,7 +33,7 @@ function Featured(){
     "https://ymcahouston.org/locations/ymca-international-services?gad_source=1&gad_campaignid=23438547325&gbraid=0AAAAADuTxhs1zhGiM222Z6AnwahEGF_kT&gclid=CjwKCAiAybfLBhAjEiwAI0mBBpLcFVEUEL4F32l4l2IIiaI_GU23hmajOBQPrVD3i0hQcLn7-wA7IRoCUA4QAvD_BwE"
   ],[
     'Fort Bend Libraries',
-    "Community & Recreation",
+    "Learning & Recreation",
     'Online/Multiple locations',
     'library',
     'information',
@@ -58,12 +58,12 @@ function Featured(){
   }
   
   return(
-    <div class="featured-resource-container">
+    <div className="featured-resource-container">
       <div className="polaroid-holder">
         <Polaroid imageurl={img(featuredSourceList[currentSource][8])} text={featuredSourceList[currentSource][9]}/>
       </div>  
       <div className="text-section">
-        <div className='text-header'>
+        <div className='text-header-please'>
           Our Featured Resources
         </div>
         <div className='featured-info'>

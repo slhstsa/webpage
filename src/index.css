@@ -15,6 +15,13 @@ body {
   color: var(--text-main);
 }
 
+@media (max-width: 900px) {
+  body {
+    height: auto !important;
+    min-height: 100vh;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

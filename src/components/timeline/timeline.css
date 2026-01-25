@@ -12,7 +12,7 @@
 
 .content-box {
   position: absolute;
-  top: 0px; 
+  top: 40px; 
   width: 400px;
   text-align: center;
   z-index: 10;
@@ -23,7 +23,11 @@
   font-family: "DIN Condensed Web";
   font-size: 3rem;
   color: #bc6c25; 
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
+  margin-top: 5px; 
+  width: 600px;  
+  margin-left: 50%; 
+  transform: translateX(-50%);
 }
 
 .content-card {
@@ -34,6 +38,7 @@
   font-family: sans-serif;
   color: #555;
   line-height: 1.6;
+  margin-top:40px; 
 }
 
 .circular-timeline {
@@ -79,17 +84,17 @@
 
 .timeline-date {
   position: absolute;
-  top: -50px;
+  top: -30px; 
   font-family: serif;
   font-weight: bold;
   font-size: 1.1rem;
   color: #606c38;
   transition: all 0.3s ease;
-  
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  transform: rotate(180deg); 
+  transform: rotate(180deg) translateY(100%); 
 }
+
 
 .timeline-item:hover .timeline-dot {
   transform: scale(1.2);
@@ -105,11 +110,56 @@
 .timeline-item.active .timeline-date {
   color: #bc6c25;
   font-size: 1.3rem;
-  top: -65px;
+  top: -35px; 
 }
 
 .year-image {
     height:150px; 
     width:auto; 
     margin-top: 415px;
+}
+
+@media (max-width: 1200px) {
+  .circular-timeline {
+    width: 1200px;
+    height: 1200px;
+    margin-left: -600px;
+    top: 240px;
+  }
+
+  .year-image {
+    margin-top: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content-box {
+    width: 320px;
+  }
+
+  .circular-timeline {
+    width: 900px;
+    height: 900px;
+    margin-left: -450px;
+    top: 220px;
+  }
+
+  .year-image {
+    height: 120px;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-box {
+    width: 280px;
+  }
+
+  .content-title {
+    font-size: 2.2rem;
+  }
+
+  .content-card {
+    padding: 20px;
+  }
 }

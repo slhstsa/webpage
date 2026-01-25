@@ -1,13 +1,13 @@
 footer h2{
   font-family: 'Yearbook Solid W01';
   letter-spacing: 5px;
-  font-size: 150px;
+  font-size: 120px;
   margin: 20px 0px 20px 50px;
 }
 
 .footer{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -17,6 +17,7 @@ footer h2{
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
+  padding-right: 27px;
 }
 
 .subscribe-section p{
@@ -62,4 +63,62 @@ footer h2{
 
 .email-input input:focus{
   box-shadow: 3px 3px rgb(0,0,0);
+}
+
+@media (max-width: 768px) {
+  footer h2 {
+    font-size: 72px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 16px;
+  }
+
+  .subscribe-section {
+    margin-top: 0;
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .email-input {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .email-input input {
+    width: min(360px, 100%);
+  }
+}
+
+@media (max-width: 520px) {
+  footer h2 {
+    font-size: 56px;
+    letter-spacing: 3px;
+  }
+
+  .email-input {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .email-input input {
+    width: 100%;
+    padding: 14px 14px;
+    font-size: 18px;
+  }
+
+  .email-input button {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    font-size: 20px;
+  }
 }
