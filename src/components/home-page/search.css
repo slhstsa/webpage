@@ -27,3 +27,19 @@
 .magnifying-img{
   width: 30px;
 }
+
+@media (max-width: 520px) {
+  .search-bar {
+    width: 100%;
+    max-width: none;
+  }
+
+  .bar {
+    height: 36px;
+    border: 2px solid #000;
+    border-radius: 999px;
+    padding: 0 12px;
+    background-color: #fff;
+    margin-bottom: 0;
+  }
+}
