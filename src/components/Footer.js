@@ -10,8 +10,12 @@ function Footer(){
         <div className='subscribe-section'>
           
           <div className="email-input">
-          <input className="join-bar" type="text" placeholder='Suggest here!' /> 
-          <button className='join-button'>SEND</button>
+          <input id="suggestion-bar" className="join-bar" type="text" placeholder='Suggest here!' /> 
+          <button onClick={() =>{
+            document.getElementById("suggestion-bar").value = "";
+            document.getElementById("suggestion-bar").placeholder = "Thank you!";
+            document.getElementById("suggestion-bar").disabled = true;
+          }} className='join-button'>SEND</button>
           </div>
           <p>
             Missing a vital resource? Suggest one here to <br/>contribute to the community
