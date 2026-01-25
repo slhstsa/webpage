@@ -29,3 +29,92 @@
 .D-letter{
   color: #bc6c25;
 }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 64px;
+    margin-top: 42px;
+    letter-spacing: 0.5px;
+  }
+
+  .old {
+    letter-spacing: 2px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  }
+}
+
+@media (max-width: 1024px) {
+  .PLEASE {
+    font-size: 140px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .PLEASE {
+    font-size: 110px;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: normal;
+    line-height: 0.92;
+  }
+
+  .old {
+    letter-spacing: 6px;
+  }
+}
+
+@media (max-width: 520px) {
+  .PLEASE {
+    font-size: 84px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .old {
+    letter-spacing: 4px;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  }
+}
+
+@media (max-width: 420px) {
+  .PLEASE {
+    font-size: 64px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .old {
+    letter-spacing: 2px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  }
+}
+
+@media (max-width: 720px) {
+  .PLEASE {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 520px) {
+  .PLEASE {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 520px) {
+  .PLEASE {
+    margin-top: 80px;
+    margin-bottom: 14px;
+    line-height: 0.9;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 420px) {
+  .PLEASE {
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+}

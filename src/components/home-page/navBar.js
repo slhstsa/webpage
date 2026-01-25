@@ -16,9 +16,14 @@ const MORE_ITEMS = [
   { label: "Events", to: "/events" }
 ];
 
+const MOBILE_ITEMS = Array.from(
+  new Map([...NAV_ITEMS, ...MORE_ITEMS].map((item) => [item.to, item])).values()
+);
+
 function Navigation() {
   const navigate = useNavigate();
   const [dropdownValue, setDropdownValue] = useState("");
+  const [mobileValue, setMobileValue] = useState("");
   const [isCompact, setIsCompact] = useState(false);
 
   useEffect(() => {
@@ -39,6 +44,14 @@ function Navigation() {
     if (path) {
       navigate(path);
       setDropdownValue("");
+    }
+  };
+
+  const selectMobile = (event) => {
+    const path = event.target.value;
+    if (path) {
+      navigate(path);
+      setMobileValue("");
     }
   };
 
@@ -66,6 +79,23 @@ function Navigation() {
             ))}
           </ul>
         </nav>
+
+        <div className="mobile-nav">
+          <select
+            className="mobile-nav-select"
+            onChange={selectMobile}
+            value={mobileValue}
+          >
+            <option value="" disabled>
+              Menu
+            </option>
+            {MOBILE_ITEMS.map((item) => (
+              <option key={item.to} value={item.to}>
+                {item.label}
+              </option>
+            ))}
+          </select>
+        </div>
 
         <div className="nav-actions">
           <div className="more-dropdown">
