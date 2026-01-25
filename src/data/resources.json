@@ -8,8 +8,17 @@
     "phone": "(281) 391-5261",
     "website": "https://ktcm.org/foodpantry/",
     "service_area": ["Katy", "Fort Bend", "West Harris"],
-    "tags": ["food pantry", "emergency food", "case management", "basic needs", "nonprofit", "Katy"],
-    "status": "active"
+    "tags": [
+      "food pantry",
+      "emergency food",
+      "case management",
+      "basic needs",
+      "nonprofit",
+      "Katy"
+    ],
+    "status": "active",
+    "lat": 29.825122,
+    "lng": -95.789207
   },
   {
     "id": "katy-christian-ministries-social-services",
@@ -20,8 +29,17 @@
     "phone": "(281) 391-9623",
     "website": "https://ktcm.org",
     "service_area": ["Katy", "Fort Bend", "West Harris"],
-    "tags": ["rent assistance", "utilities", "basic needs", "nonprofit", "Katy", "financial assistance"],
-    "status": "active"
+    "tags": [
+      "rent assistance",
+      "utilities",
+      "basic needs",
+      "nonprofit",
+      "Katy",
+      "financial assistance"
+    ],
+    "status": "active",
+    "lat": 29.786707,
+    "lng": -95.820302
   },
   {
     "id": "fort-bend-social-services-food-assistance",
@@ -32,7 +50,13 @@
     "phone": "(281) 238-3502",
     "website": "https://www.fortbendcountytx.gov/government/departments/social-services/services/food-assistance",
     "service_area": ["Fort Bend"],
-    "tags": ["county program", "food assistance", "eligibility-based", "basic needs", "Fort Bend"],
+    "tags": [
+      "county program",
+      "food assistance",
+      "eligibility-based",
+      "basic needs",
+      "Fort Bend"
+    ],
     "status": "active"
   },
   {
@@ -44,7 +68,14 @@
     "phone": "(281) 238-3502",
     "website": "https://www.fortbendcountytx.gov/government/departments/social-services",
     "service_area": ["Fort Bend"],
-    "tags": ["emergency aid", "utilities", "rent", "prescriptions", "county services", "basic needs"],
+    "tags": [
+      "emergency aid",
+      "utilities",
+      "rent",
+      "prescriptions",
+      "county services",
+      "basic needs"
+    ],
     "status": "active"
   },
   {
@@ -56,7 +87,13 @@
     "phone": "(713) 578-2100",
     "website": "https://hchatexas.org/housing-choice-voucher-program/services/",
     "service_area": ["Harris", "West Harris", "Katy"],
-    "tags": ["food resources", "referrals", "Harris County", "SNAP help", "emergency food"],
+    "tags": [
+      "food resources",
+      "referrals",
+      "Harris County",
+      "SNAP help",
+      "emergency food"
+    ],
     "status": "active"
   },
   {
@@ -68,7 +105,14 @@
     "phone": "(832) 927-4955",
     "website": "https://uplift.harriscountytx.gov",
     "service_area": ["Harris"],
-    "tags": ["cash assistance", "basic needs", "Harris County", "rent", "groceries", "utilities"],
+    "tags": [
+      "cash assistance",
+      "basic needs",
+      "Harris County",
+      "rent",
+      "groceries",
+      "utilities"
+    ],
     "status": "active"
   },
   {
@@ -80,7 +124,14 @@
     "phone": "2-1-1",
     "website": "https://unitedwayhouston.org/what-we-do/everyday-basic-needs/",
     "service_area": ["Fort Bend", "Harris", "Katy"],
-    "tags": ["referrals", "food", "housing", "utilities", "helpline", "regional network"],
+    "tags": [
+      "referrals",
+      "food",
+      "housing",
+      "utilities",
+      "helpline",
+      "regional network"
+    ],
     "status": "active"
   },
   {
@@ -92,8 +143,16 @@
     "phone": "(281) 202-6200",
     "website": "https://catholiccharities.org/mgcc/",
     "service_area": ["Fort Bend"],
-    "tags": ["senior services", "food pantry", "Fort Bend", "Catholic Charities", "basic needs"],
-    "status": "active"
+    "tags": [
+      "senior services",
+      "food pantry",
+      "Fort Bend",
+      "Catholic Charities",
+      "basic needs"
+    ],
+    "status": "active",
+    "lat": 29.59059,
+    "lng": -95.772724
   },
   {
     "id": "fort-bend-care-center-food-programs",
@@ -104,7 +163,13 @@
     "phone": "(832) 539-4846",
     "website": "https://www.fortbendcarecenter.org/food-programs/",
     "service_area": ["Fort Bend"],
-    "tags": ["food fair", "produce", "Houston Food Bank partner", "Fort Bend", "appointments"],
+    "tags": [
+      "food fair",
+      "produce",
+      "Houston Food Bank partner",
+      "Fort Bend",
+      "appointments"
+    ],
     "status": "active"
   },
   {
@@ -116,8 +181,16 @@
     "phone": "(832) 369-9390",
     "website": "https://www.houstonfoodbank.org/find-help/",
     "service_area": ["Fort Bend", "Harris", "Katy", "Cinco Ranch"],
-    "tags": ["food bank", "pantry locator", "SNAP", "regional", "emergency food"],
-    "status": "active"
+    "tags": [
+      "food bank",
+      "pantry locator",
+      "SNAP",
+      "regional",
+      "emergency food"
+    ],
+    "status": "active",
+    "lat": 29.780693,
+    "lng": -95.274517
   },
   {
     "id": "katy-isd-nutrition-food-services",
@@ -128,7 +201,13 @@
     "phone": "281-396-6240",
     "website": "https://www.katyisd.org",
     "service_area": ["Katy", "Cinco Ranch"],
-    "tags": ["school meals", "student nutrition", "free lunch", "Katy ISD", "children"],
+    "tags": [
+      "school meals",
+      "student nutrition",
+      "free lunch",
+      "Katy ISD",
+      "children"
+    ],
     "status": "active"
   },
   {
@@ -140,7 +219,13 @@
     "phone": "281-396-7000",
     "website": "https://www.katyisd.org",
     "service_area": ["Katy", "Cinco Ranch"],
-    "tags": ["homeless students", "school meals", "transportation", "basic needs", "KISD"],
+    "tags": [
+      "homeless students",
+      "school meals",
+      "transportation",
+      "basic needs",
+      "KISD"
+    ],
     "status": "active"
   },
   {
@@ -152,7 +237,13 @@
     "phone": "281-396-7000",
     "website": "https://www.katyisd.org",
     "service_area": ["Katy", "Cinco Ranch"],
-    "tags": ["community resources", "referrals", "food", "families", "school district"],
+    "tags": [
+      "community resources",
+      "referrals",
+      "food",
+      "families",
+      "school district"
+    ],
     "status": "active"
   },
   {
@@ -164,8 +255,16 @@
     "phone": "(281) 391-4504",
     "website": "https://ktcm.org/crisiscenter/",
     "service_area": ["Katy", "Fort Bend", "West Harris", "Cinco Ranch"],
-    "tags": ["domestic violence", "crisis", "legal advocacy", "shelter referrals", "basic needs"],
-    "status": "active"
+    "tags": [
+      "domestic violence",
+      "crisis",
+      "legal advocacy",
+      "shelter referrals",
+      "basic needs"
+    ],
+    "status": "active",
+    "lat": 29.837562,
+    "lng": -95.733756
   },
   {
     "id": "family-hope-fulshear",
@@ -176,8 +275,16 @@
     "phone": "",
     "website": "",
     "service_area": ["Fort Bend", "West Katy"],
-    "tags": ["food pantry", "Houston Food Bank partner", "family services", "Fort Bend", "Fulshear"],
-    "status": "active"
+    "tags": [
+      "food pantry",
+      "Houston Food Bank partner",
+      "family services",
+      "Fort Bend",
+      "Fulshear"
+    ],
+    "status": "active",
+    "lat": 29.8143817,
+    "lng": -95.8222329
   },
   {
     "id": "katy-texas-stake-community-resources",
@@ -188,7 +295,13 @@
     "phone": "",
     "website": "https://www.katystake.com/resources/",
     "service_area": ["Katy", "West Houston"],
-    "tags": ["resource list", "food pantry referrals", "faith-based", "Katy", "community services"],
+    "tags": [
+      "resource list",
+      "food pantry referrals",
+      "faith-based",
+      "Katy",
+      "community services"
+    ],
     "status": "active"
   },
   {
@@ -200,7 +313,14 @@
     "phone": "2-1-1",
     "website": "https://www.211texas.org",
     "service_area": ["Fort Bend", "Harris", "Katy", "Cinco Ranch"],
-    "tags": ["hotline", "referrals", "food", "housing", "utilities", "statewide"],
+    "tags": [
+      "hotline",
+      "referrals",
+      "food",
+      "housing",
+      "utilities",
+      "statewide"
+    ],
     "status": "active"
   },
   {
@@ -212,7 +332,13 @@
     "phone": "",
     "website": "https://www.fortbend.lib.tx.us",
     "service_area": ["Fort Bend"],
-    "tags": ["library", "information", "referrals", "internet access", "Fort Bend"],
+    "tags": [
+      "library",
+      "information",
+      "referrals",
+      "internet access",
+      "Fort Bend"
+    ],
     "status": "active"
   },
   {
@@ -224,8 +350,17 @@
     "phone": "(281) 492-8592",
     "website": "https://hcpl.net",
     "service_area": ["West Harris", "Katy"],
-    "tags": ["library", "information", "computers", "referrals", "West Harris", "Katy"],
-    "status": "active"
+    "tags": [
+      "library",
+      "information",
+      "computers",
+      "referrals",
+      "West Harris",
+      "Katy"
+    ],
+    "status": "active",
+    "lat": 29.757733,
+    "lng": -95.734022
   },
   {
     "id": "harris-county-public-health-wic",
@@ -236,7 +371,14 @@
     "phone": "",
     "website": "https://publichealth.harriscountytx.gov",
     "service_area": ["Harris", "West Harris", "Katy"],
-    "tags": ["WIC", "nutrition", "infants", "young children", "vouchers", "West Harris"],
+    "tags": [
+      "WIC",
+      "nutrition",
+      "infants",
+      "young children",
+      "vouchers",
+      "West Harris"
+    ],
     "status": "active"
   },
   {
@@ -260,7 +402,13 @@
     "phone": "2-1-1",
     "website": "https://www.hhs.texas.gov",
     "service_area": ["Texas", "Fort Bend", "Harris", "Katy", "Cinco Ranch"],
-    "tags": ["cash assistance", "families", "state program", "basic needs", "TANF"],
+    "tags": [
+      "cash assistance",
+      "families",
+      "state program",
+      "basic needs",
+      "TANF"
+    ],
     "status": "active"
   },
   {
@@ -272,7 +420,13 @@
     "phone": "",
     "website": "https://www.bakerripley.org",
     "service_area": ["Harris", "Greater Houston", "West Houston", "Katy"],
-    "tags": ["community center", "food distributions", "case management", "utilities", "West Houston"],
+    "tags": [
+      "community center",
+      "food distributions",
+      "case management",
+      "utilities",
+      "West Houston"
+    ],
     "status": "active"
   },
   {
@@ -284,8 +438,16 @@
     "phone": "",
     "website": "https://www.gccsa.org",
     "service_area": ["Harris", "Greater Houston"],
-    "tags": ["emergency food", "utilities", "rent", "low-income", "Harris County"],
-    "status": "active"
+    "tags": [
+      "emergency food",
+      "utilities",
+      "rent",
+      "low-income",
+      "Harris County"
+    ],
+    "status": "active",
+    "lat": 29.7792124,
+    "lng": -95.3202439
   },
   {
     "id": "the-beacon",
@@ -296,8 +458,16 @@
     "phone": "",
     "website": "https://www.beaconhomeless.org",
     "service_area": ["Harris"],
-    "tags": ["homeless services", "hot meals", "showers", "laundry", "case management"],
-    "status": "active"
+    "tags": [
+      "homeless services",
+      "hot meals",
+      "showers",
+      "laundry",
+      "case management"
+    ],
+    "status": "active",
+    "lat": 29.728382,
+    "lng": -94.955576
   },
   {
     "id": "catholic-charities-galveston-houston",
@@ -308,7 +478,13 @@
     "phone": "",
     "website": "https://catholiccharities.org",
     "service_area": ["Fort Bend", "Harris", "Greater Houston", "Katy"],
-    "tags": ["food pantry", "rent help", "utilities", "Catholic Charities", "case management"],
+    "tags": [
+      "food pantry",
+      "rent help",
+      "utilities",
+      "Catholic Charities",
+      "case management"
+    ],
     "status": "active"
   },
   {
@@ -323,7 +499,6 @@
     "tags": ["WIC", "nutrition", "infants", "pregnant women", "vouchers"],
     "status": "active"
   },
-
   {
     "id": "sbchc-katy-clinic",
     "name": "Katy Clinic – Spring Branch Community Health Center",
@@ -333,8 +508,17 @@
     "phone": "713-231-5757",
     "website": "https://sbchc.net/our-locations/katy-clinic/",
     "service_area": ["Katy"],
-    "tags": ["primary care", "behavioral health", "pediatrics", "low-cost", "community clinic", "vaccinations"],
-    "status": "active"
+    "tags": [
+      "primary care",
+      "behavioral health",
+      "pediatrics",
+      "low-cost",
+      "community clinic",
+      "vaccinations"
+    ],
+    "status": "active",
+    "lat": 29.786705,
+    "lng": -95.820146
   },
   {
     "id": "sbchc-west-houston-clinic",
@@ -345,8 +529,17 @@
     "phone": "713-462-6555",
     "website": "https://sbchc.net/our-locations/west-houston-clinic/",
     "service_area": ["West Harris", "Katy"],
-    "tags": ["primary care", "behavioral health", "low-cost", "community health", "West Houston", "family medicine"],
-    "status": "active"
+    "tags": [
+      "primary care",
+      "behavioral health",
+      "low-cost",
+      "community health",
+      "West Houston",
+      "family medicine"
+    ],
+    "status": "active",
+    "lat": 29.830665,
+    "lng": -95.707292
   },
   {
     "id": "oceans-behavioral-hospital-katy",
@@ -357,8 +550,17 @@
     "phone": "",
     "website": "https://oceanshealthcare.com/ohc-location/katy/",
     "service_area": ["Katy"],
-    "tags": ["inpatient", "outpatient", "adult mental health", "psychiatry", "behavioral hospital", "crisis care"],
-    "status": "active"
+    "tags": [
+      "inpatient",
+      "outpatient",
+      "adult mental health",
+      "psychiatry",
+      "behavioral hospital",
+      "crisis care"
+    ],
+    "status": "active",
+    "lat": 29.778887,
+    "lng": -95.749401
   },
   {
     "id": "west-oaks-branches-katy",
@@ -369,8 +571,17 @@
     "phone": "281-647-0020",
     "website": "https://westoakshospital.com/programs-services/outpatient/branches-katy/",
     "service_area": ["Katy", "Cinco Ranch"],
-    "tags": ["outpatient", "day treatment", "adolescents", "children", "counseling", "group therapy"],
-    "status": "active"
+    "tags": [
+      "outpatient",
+      "day treatment",
+      "adolescents",
+      "children",
+      "counseling",
+      "group therapy"
+    ],
+    "status": "active",
+    "lat": 29.737496,
+    "lng": -95.778452
   },
   {
     "id": "fort-bend-behavioral-health-services",
@@ -381,8 +592,17 @@
     "phone": "",
     "website": "https://www.fortbendcountytx.gov/government/departments/behavioral-health-services",
     "service_area": ["Fort Bend"],
-    "tags": ["county program", "behavioral health", "case management", "youth", "trauma", "justice-involved"],
-    "status": "active"
+    "tags": [
+      "county program",
+      "behavioral health",
+      "case management",
+      "youth",
+      "trauma",
+      "justice-involved"
+    ],
+    "status": "active",
+    "lat": 29.581998,
+    "lng": -95.760752
   },
   {
     "id": "fort-bend-cit",
@@ -393,8 +613,17 @@
     "phone": "",
     "website": "https://www.fortbendcountytx.gov/government/departments/behavioral-health-services/behavioral-health-programs/crisis-intervention",
     "service_area": ["Fort Bend"],
-    "tags": ["crisis response", "law enforcement", "diversion", "mental health", "safety", "emergency support"],
-    "status": "active"
+    "tags": [
+      "crisis response",
+      "law enforcement",
+      "diversion",
+      "mental health",
+      "safety",
+      "emergency support"
+    ],
+    "status": "active",
+    "lat": 29.573897,
+    "lng": -95.749565
   },
   {
     "id": "fort-bend-bhs-highlights",
@@ -405,8 +634,17 @@
     "phone": "",
     "website": "https://www.fortbendcountytx.gov/government/departments/behavioral-health-services/bhs-highlights",
     "service_area": ["Fort Bend"],
-    "tags": ["youth mental health", "family support", "case management", "education", "wraparound", "prevention"],
-    "status": "active"
+    "tags": [
+      "youth mental health",
+      "family support",
+      "case management",
+      "education",
+      "wraparound",
+      "prevention"
+    ],
+    "status": "active",
+    "lat": 29.581998,
+    "lng": -95.760752
   },
   {
     "id": "harris-county-public-health-behavioral-health",
@@ -417,7 +655,14 @@
     "phone": "832-927-1335",
     "website": "https://publichealth.harriscountytx.gov/Divisions-Offices/Divisions/Community-Health-Wellness-Division/Behavioral-Health-Services",
     "service_area": ["Harris"],
-    "tags": ["behavioral health", "county program", "counseling", "referrals", "screening", "public health"],
+    "tags": [
+      "behavioral health",
+      "county program",
+      "counseling",
+      "referrals",
+      "screening",
+      "public health"
+    ],
     "status": "active"
   },
   {
@@ -429,8 +674,17 @@
     "phone": "713-275-5400",
     "website": "https://www.menningerclinic.org",
     "service_area": ["Harris", "Greater Houston"],
-    "tags": ["psychiatric hospital", "inpatient", "outpatient", "complex disorders", "adults", "adolescents"],
-    "status": "active"
+    "tags": [
+      "psychiatric hospital",
+      "inpatient",
+      "outpatient",
+      "complex disorders",
+      "adults",
+      "adolescents"
+    ],
+    "status": "active",
+    "lat": 29.650478,
+    "lng": -95.45945
   },
   {
     "id": "west-houston-counseling-center",
@@ -441,8 +695,17 @@
     "phone": "281-940-8515",
     "website": "https://westhoustoncounseling.com",
     "service_area": ["Katy"],
-    "tags": ["counseling", "family therapy", "teens", "adults", "private practice", "telehealth"],
-    "status": "active"
+    "tags": [
+      "counseling",
+      "family therapy",
+      "teens",
+      "adults",
+      "private practice",
+      "telehealth"
+    ],
+    "status": "active",
+    "lat": 29.770595,
+    "lng": -95.77408
   },
   {
     "id": "fort-bend-hhs",
@@ -453,8 +716,17 @@
     "phone": "281-342-6414",
     "website": "https://www.fortbendcountytx.gov/government/departments/health-and-human-services",
     "service_area": ["Fort Bend"],
-    "tags": ["public health", "immunizations", "clinical services", "low-cost", "county clinic", "uninsured"],
-    "status": "active"
+    "tags": [
+      "public health",
+      "immunizations",
+      "clinical services",
+      "low-cost",
+      "county clinic",
+      "uninsured"
+    ],
+    "status": "active",
+    "lat": 29.56516,
+    "lng": -95.780367
   },
   {
     "id": "fort-bend-indigent-health-care",
@@ -465,8 +737,17 @@
     "phone": "281-342-7318",
     "website": "https://www.fortbendcountytx.gov/government/departments/health-and-human-services/financial-assistance-programs/fort-bend-county-indigent-health-care-program",
     "service_area": ["Fort Bend"],
-    "tags": ["indigent care", "financial assistance", "primary care", "prescriptions", "eligibility", "safety net"],
-    "status": "active"
+    "tags": [
+      "indigent care",
+      "financial assistance",
+      "primary care",
+      "prescriptions",
+      "eligibility",
+      "safety net"
+    ],
+    "status": "active",
+    "lat": 29.56516,
+    "lng": -95.780367
   },
   {
     "id": "fort-bend-wic-county",
@@ -477,7 +758,14 @@
     "phone": "281-342-3030",
     "website": "https://www.fortbendcountytx.gov/government/departments/health-and-human-services/women-infants-children-wic-program",
     "service_area": ["Fort Bend"],
-    "tags": ["WIC", "maternal health", "child health", "screenings", "nutrition", "referrals"],
+    "tags": [
+      "WIC",
+      "maternal health",
+      "child health",
+      "screenings",
+      "nutrition",
+      "referrals"
+    ],
     "status": "active"
   },
   {
@@ -489,7 +777,14 @@
     "phone": "713-439-6145",
     "website": "https://publichealth.harriscountytx.gov/Services-Programs/All-Services/WIC",
     "service_area": ["Harris", "West Harris", "Katy"],
-    "tags": ["WIC", "maternal health", "infants", "nutrition", "health referrals", "low-income"],
+    "tags": [
+      "WIC",
+      "maternal health",
+      "infants",
+      "nutrition",
+      "health referrals",
+      "low-income"
+    ],
     "status": "active"
   },
   {
@@ -501,7 +796,13 @@
     "phone": "988",
     "website": "https://www.hhs.texas.gov/services/mental-health-substance-use/mental-health-crisis-services",
     "service_area": ["Texas", "Fort Bend", "Harris", "Katy", "Cinco Ranch"],
-    "tags": ["crisis line", "suicide prevention", "24/7", "phone support", "statewide"],
+    "tags": [
+      "crisis line",
+      "suicide prevention",
+      "24/7",
+      "phone support",
+      "statewide"
+    ],
     "status": "active"
   },
   {
@@ -513,8 +814,17 @@
     "phone": "832-522-1000",
     "website": "https://www.houstonmethodist.org/west-hospital/",
     "service_area": ["West Harris", "Katy"],
-    "tags": ["hospital", "emergency care", "behavioral health referrals", "social work", "medical", "specialty care"],
-    "status": "active"
+    "tags": [
+      "hospital",
+      "emergency care",
+      "behavioral health referrals",
+      "social work",
+      "medical",
+      "specialty care"
+    ],
+    "status": "active",
+    "lat": 29.78729,
+    "lng": -95.701597
   },
   {
     "id": "memorial-hermann-katy",
@@ -525,8 +835,17 @@
     "phone": "281-644-7000",
     "website": "https://memorialhermann.org/locations/katy-hospital",
     "service_area": ["Katy"],
-    "tags": ["hospital", "emergency", "case management", "referrals", "inpatient", "medical"],
-    "status": "active"
+    "tags": [
+      "hospital",
+      "emergency",
+      "case management",
+      "referrals",
+      "inpatient",
+      "medical"
+    ],
+    "status": "active",
+    "lat": 29.784865,
+    "lng": -95.786022
   },
   {
     "id": "texas-childrens-west-campus",
@@ -537,8 +856,17 @@
     "phone": "832-227-1000",
     "website": "https://www.texaschildrens.org/location/west-campus",
     "service_area": ["West Harris", "Katy"],
-    "tags": ["pediatrics", "child psychiatry", "counseling", "hospital", "adolescents", "specialty care"],
-    "status": "active"
+    "tags": [
+      "pediatrics",
+      "child psychiatry",
+      "counseling",
+      "hospital",
+      "adolescents",
+      "specialty care"
+    ],
+    "status": "active",
+    "lat": 29.78731,
+    "lng": -95.694905
   },
   {
     "id": "katy-isd-counseling",
@@ -549,7 +877,14 @@
     "phone": "281-396-7000",
     "website": "https://www.katyisd.org",
     "service_area": ["Katy", "Cinco Ranch"],
-    "tags": ["school counseling", "youth mental health", "crisis response", "referrals", "K-12", "prevention"],
+    "tags": [
+      "school counseling",
+      "youth mental health",
+      "crisis response",
+      "referrals",
+      "K-12",
+      "prevention"
+    ],
     "status": "active"
   },
   {
@@ -561,7 +896,14 @@
     "phone": "281-634-1000",
     "website": "https://www.fortbendisd.com",
     "service_area": ["Fort Bend"],
-    "tags": ["school counseling", "crisis support", "youth", "prevention", "referrals", "K-12"],
+    "tags": [
+      "school counseling",
+      "crisis support",
+      "youth",
+      "prevention",
+      "referrals",
+      "K-12"
+    ],
     "status": "active"
   },
   {
@@ -573,7 +915,14 @@
     "phone": "832-223-0000",
     "website": "https://www.lcisd.org",
     "service_area": ["Fort Bend"],
-    "tags": ["school counseling", "youth mental health", "referrals", "crisis", "K-12", "family support"],
+    "tags": [
+      "school counseling",
+      "youth mental health",
+      "referrals",
+      "crisis",
+      "K-12",
+      "family support"
+    ],
     "status": "active"
   },
   {
@@ -585,7 +934,14 @@
     "phone": "713-970-7000",
     "website": "https://www.theharriscenter.org",
     "service_area": ["Harris", "West Harris"],
-    "tags": ["LMHA", "psychiatry", "counseling", "crisis", "adults", "children"],
+    "tags": [
+      "LMHA",
+      "psychiatry",
+      "counseling",
+      "crisis",
+      "adults",
+      "children"
+    ],
     "status": "active"
   },
   {
@@ -597,10 +953,18 @@
     "phone": "281-239-1300",
     "website": "https://www.texanacenter.com",
     "service_area": ["Fort Bend"],
-    "tags": ["LMHA", "outpatient", "crisis", "developmental disabilities", "adults", "youth"],
-    "status": "active"
+    "tags": [
+      "LMHA",
+      "outpatient",
+      "crisis",
+      "developmental disabilities",
+      "adults",
+      "youth"
+    ],
+    "status": "active",
+    "lat": 29.542396,
+    "lng": -95.776165
   },
-
   {
     "id": "fort-bend-era2",
     "name": "Fort Bend County Emergency Rental Assistance (ERA2) Program",
@@ -610,7 +974,13 @@
     "phone": "832-520-5235",
     "website": "https://www.fortbendcountytx.gov/government/departments/auditor/emergency-rental-assistance-era2-program",
     "service_area": ["Fort Bend"],
-    "tags": ["rental assistance", "utility assistance", "county program", "case management", "tenants"],
+    "tags": [
+      "rental assistance",
+      "utility assistance",
+      "county program",
+      "case management",
+      "tenants"
+    ],
     "status": "active"
   },
   {
@@ -622,7 +992,13 @@
     "phone": "281-238-3502",
     "website": "https://www.fortbendcountytx.gov/government/departments/social-services/services/rent-mortgage-assistance",
     "service_area": ["Fort Bend"],
-    "tags": ["rent help", "mortgage help", "homelessness prevention", "emergency aid", "appointments"],
+    "tags": [
+      "rent help",
+      "mortgage help",
+      "homelessness prevention",
+      "emergency aid",
+      "appointments"
+    ],
     "status": "active"
   },
   {
@@ -634,7 +1010,13 @@
     "phone": "281-238-3502",
     "website": "https://www.fortbendcountytx.gov/government/departments/social-services/services/utility-assistance",
     "service_area": ["Fort Bend"],
-    "tags": ["utility bills", "electric", "water", "emergency assistance", "low-income"],
+    "tags": [
+      "utility bills",
+      "electric",
+      "water",
+      "emergency assistance",
+      "low-income"
+    ],
     "status": "active"
   },
   {
@@ -646,8 +1028,17 @@
     "phone": "713-578-2000",
     "website": "https://csd.harriscountytx.gov",
     "service_area": ["Harris"],
-    "tags": ["housing stability", "community services", "homeless prevention", "grants", "county department", "resources"],
-    "status": "active"
+    "tags": [
+      "housing stability",
+      "community services",
+      "homeless prevention",
+      "grants",
+      "county department",
+      "resources"
+    ],
+    "status": "active",
+    "lat": 29.683884,
+    "lng": -95.414236
   },
   {
     "id": "tdhca-help-for-texans",
@@ -658,7 +1049,13 @@
     "phone": "800-525-0657",
     "website": "https://www.tdhca.texas.gov/help-for-texans",
     "service_area": ["Texas", "Fort Bend", "Harris"],
-    "tags": ["statewide", "rental help", "utility help", "search tool", "referrals"],
+    "tags": [
+      "statewide",
+      "rental help",
+      "utility help",
+      "search tool",
+      "referrals"
+    ],
     "status": "active"
   },
   {
@@ -670,7 +1067,14 @@
     "phone": "",
     "website": "https://www.salvationarmyusa.org/usa-southern-territory/texas/utility-rent-assistance/",
     "service_area": ["Texas", "Fort Bend", "Harris"],
-    "tags": ["faith-based", "emergency aid", "rent", "utilities", "housing stability", "crisis"],
+    "tags": [
+      "faith-based",
+      "emergency aid",
+      "rent",
+      "utilities",
+      "housing stability",
+      "crisis"
+    ],
     "status": "active"
   },
   {
@@ -682,8 +1086,17 @@
     "phone": "713-526-4611",
     "website": "https://ccctx.org/financial-stability/",
     "service_area": ["Harris", "Region"],
-    "tags": ["utility assistance", "rent", "mortgage", "financial stability", "case management", "emergency"],
-    "status": "active"
+    "tags": [
+      "utility assistance",
+      "rent",
+      "mortgage",
+      "financial stability",
+      "case management",
+      "emergency"
+    ],
+    "status": "active",
+    "lat": 29.744902,
+    "lng": -95.37879
   },
   {
     "id": "houston-housing-authority",
@@ -694,8 +1107,16 @@
     "phone": "713-260-0500",
     "website": "https://www.housingforhouston.com",
     "service_area": ["Harris"],
-    "tags": ["Section 8", "vouchers", "public housing", "low-income", "rental subsidies"],
-    "status": "active"
+    "tags": [
+      "Section 8",
+      "vouchers",
+      "public housing",
+      "low-income",
+      "rental subsidies"
+    ],
+    "status": "active",
+    "lat": 29.739823,
+    "lng": -95.485619
   },
   {
     "id": "fort-bend-housing-authority",
@@ -706,8 +1127,16 @@
     "phone": "281-242-2610",
     "website": "https://www.fortbendhousing.com",
     "service_area": ["Fort Bend"],
-    "tags": ["housing authority", "vouchers", "subsidized housing", "low-income", "stability"],
-    "status": "active"
+    "tags": [
+      "housing authority",
+      "vouchers",
+      "subsidized housing",
+      "low-income",
+      "stability"
+    ],
+    "status": "active",
+    "lat": 29.590909,
+    "lng": -95.745726
   },
   {
     "id": "east-fort-bend-human-needs-ministry",
@@ -718,8 +1147,17 @@
     "phone": "281-261-1006",
     "website": "https://www.humanneeds.org",
     "service_area": ["Fort Bend"],
-    "tags": ["rent", "mortgage", "utilities", "emergency aid", "nonprofit", "East Fort Bend"],
-    "status": "active"
+    "tags": [
+      "rent",
+      "mortgage",
+      "utilities",
+      "emergency aid",
+      "nonprofit",
+      "East Fort Bend"
+    ],
+    "status": "active",
+    "lat": 29.613854,
+    "lng": -95.56014
   },
   {
     "id": "lone-star-legal-aid",
@@ -731,7 +1169,9 @@
     "website": "https://www.lonestarlegal.org",
     "service_area": ["Fort Bend", "Harris", "Katy"],
     "tags": ["civil law", "pro bono", "low income", "eviction", "family law"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.752775,
+    "lng": -95.366562
   },
   {
     "id": "catholic-charities-cabrini-center",
@@ -743,7 +1183,9 @@
     "website": "https://catholiccharities.org/cabrini",
     "service_area": ["Fort Bend", "Harris", "Katy"],
     "tags": ["immigration", "citizenship", "asylum", "DACA", "legal defense"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.74965,
+    "lng": -95.47335
   },
   {
     "id": "tahirih-justice-center-houston",
@@ -754,8 +1196,15 @@
     "phone": "(713) 496-0100",
     "website": "https://www.tahirih.org",
     "service_area": ["Fort Bend", "Harris", "Katy", "Cinco Ranch"],
-    "tags": ["domestic violence", "immigration", "human trafficking", "women's rights"],
-    "status": "active"
+    "tags": [
+      "domestic violence",
+      "immigration",
+      "human trafficking",
+      "women's rights"
+    ],
+    "status": "active",
+    "lat": 29.748489,
+    "lng": -95.472534
   },
   {
     "id": "fort-bend-law-library",
@@ -767,7 +1216,9 @@
     "website": "https://www.fortbendcountytx.gov/government/departments/law-library",
     "service_area": ["Fort Bend", "Katy"],
     "tags": ["legal research", "self-help", "court forms", "law library"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.576462,
+    "lng": -95.753338
   },
   {
     "id": "houston-volunteer-lawyers",
@@ -779,7 +1230,9 @@
     "website": "https://www.makejusticehappen.org",
     "service_area": ["Harris", "Katy", "Cinco Ranch"],
     "tags": ["pro bono", "veterans", "family law", "civil"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.758391,
+    "lng": -95.368194
   },
   {
     "id": "ymca-international-services",
@@ -791,7 +1244,9 @@
     "website": "https://www.ymcahouston.org/ymca-international",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["refugees", "employment", "citizenship", "immigration"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.730367,
+    "lng": -95.578197
   },
   {
     "id": "beacon-law",
@@ -803,7 +1258,9 @@
     "website": "https://www.beaconhomeless.org/beaconlaw",
     "service_area": ["Harris", "Katy"],
     "tags": ["ID restoration", "homelessness", "benefits", "civil rights"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.759234,
+    "lng": -95.35981
   },
   {
     "id": "raices-houston",
@@ -815,7 +1272,9 @@
     "website": "https://www.raicestexas.org",
     "service_area": ["Fort Bend", "Harris", "Katy"],
     "tags": ["immigration", "youth services", "asylum", "removal defense"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.746509,
+    "lng": -95.47378
   },
   {
     "id": "kind-houston",
@@ -827,7 +1286,9 @@
     "website": "https://supportkind.org",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["unaccompanied minors", "immigration", "child advocacy"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.755772,
+    "lng": -95.367514
   },
   {
     "id": "harris-county-law-library",
@@ -839,7 +1300,9 @@
     "website": "https://www.harriscountylawlibrary.org",
     "service_area": ["Harris", "Katy", "Cinco Ranch"],
     "tags": ["virtual court", "legal research", "self-help", "public library"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.762115,
+    "lng": -95.359949
   },
   {
     "id": "texas-legal-services-center",
@@ -862,8 +1325,15 @@
     "phone": "(713) 224-9911",
     "website": "https://avda-tx.org",
     "service_area": ["Harris", "Fort Bend", "Katy"],
-    "tags": ["domestic violence", "family law", "protective orders", "legal aid"],
-    "status": "active"
+    "tags": [
+      "domestic violence",
+      "family law",
+      "protective orders",
+      "legal aid"
+    ],
+    "status": "active",
+    "lat": 29.728794,
+    "lng": -94.957455
   },
   {
     "id": "harris-county-immigrant-legal-services",
@@ -874,8 +1344,15 @@
     "phone": "(833) 468-4664",
     "website": "https://hcd.harriscountytx.gov/Residents/Legal-Services",
     "service_area": ["Harris", "Katy"],
-    "tags": ["citizenship", "deportation defense", "government support", "immigration"],
-    "status": "active"
+    "tags": [
+      "citizenship",
+      "deportation defense",
+      "government support",
+      "immigration"
+    ],
+    "status": "active",
+    "lat": 29.754964,
+    "lng": -95.364486
   },
   {
     "id": "bakerripley-immigration-citizenship",
@@ -887,7 +1364,9 @@
     "website": "https://www.bakerripley.org",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["citizenship", "naturalization", "immigration", "green cards"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.710539,
+    "lng": -95.497753
   },
   {
     "id": "houston-lawyer-referral-service",
@@ -898,7 +1377,12 @@
     "phone": "(713) 237-9429",
     "website": "https://hlrs.org",
     "service_area": ["Harris", "Fort Bend", "Katy", "Cinco Ranch"],
-    "tags": ["referral", "legalreferral service", "legal advice", "attorney match"],
+    "tags": [
+      "referral",
+      "legalreferral service",
+      "legal advice",
+      "attorney match"
+    ],
     "status": "active"
   },
   {
@@ -911,7 +1395,9 @@
     "website": "https://www.fortbendcountytx.gov/government/departments/district-clerk",
     "service_area": ["Fort Bend", "Katy", "Cinco Ranch"],
     "tags": ["government", "court records", "passports", "civil filing"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.581998,
+    "lng": -95.760752
   },
   {
     "id": "justice-for-all-immigrants",
@@ -923,7 +1409,9 @@
     "website": "https://justiceforallimmigrants.org",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["immigration", "family unity", "refugee support", "citizenship"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.778495,
+    "lng": -95.36299
   },
   {
     "id": "texas-access-visitation-hotline",
@@ -947,7 +1435,9 @@
     "website": "https://www.memorialhermann.org",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["health law", "housing", "patient advocacy", "legal aid"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.713663,
+    "lng": -95.395783
   },
   {
     "id": "naacp-houston-legal-redress",
@@ -959,7 +1449,9 @@
     "website": "https://naacphouston.org",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["civil rights", "discrimination", "advocacy", "referral"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.728629,
+    "lng": -95.374256
   },
   {
     "id": "harris-county-bond-assistance",
@@ -971,7 +1463,9 @@
     "website": "https://www.harriscountytx.gov",
     "service_area": ["Harris", "Katy"],
     "tags": ["bail", "criminal law", "legal support", "government"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.762902,
+    "lng": -95.357445
   },
   {
     "id": "tx-oag-child-support-richmond",
@@ -983,7 +1477,9 @@
     "website": "https://www.texasattorneygeneral.gov",
     "service_area": ["Fort Bend", "Katy", "Cinco Ranch"],
     "tags": ["child support", "paternity", "government"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.573282,
+    "lng": -95.773229
   },
   {
     "id": "uh-immigration-clinic",
@@ -995,7 +1491,9 @@
     "website": "https://www.law.uh.edu/clinic/immi.asp",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["asylum", "law school", "crime victims", "immigration"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.72071,
+    "lng": -95.3385
   },
   {
     "id": "houston-immigration-collaborative",
@@ -1009,7 +1507,6 @@
     "tags": ["immigration", "hotline", "resource hub", "collaboration"],
     "status": "active"
   },
-
   {
     "id": "city-of-katy-senior-services",
     "name": "City of Katy Senior Services (Fussell Senior Center)",
@@ -1020,7 +1517,9 @@
     "website": "https://www.cityofkaty.com/government/city-departments/senior-services",
     "service_area": ["Katy", "Cinco Ranch"],
     "tags": ["recreation", "wellness", "social", "senior center"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.79021,
+    "lng": -95.8156
   },
   {
     "id": "arc-of-katy",
@@ -1032,7 +1531,9 @@
     "website": "https://www.thearcofkaty.org/",
     "service_area": ["Katy", "Cinco Ranch", "West Harris"],
     "tags": ["IDD", "day programs", "socialization", "inclusion"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.791045,
+    "lng": -95.823566
   },
   {
     "id": "fort-bend-pinnacle-senior-center",
@@ -1044,7 +1545,9 @@
     "website": "https://www.fortbendcountytx.gov/government/departments/parks-and-recreation/fbc-community-centers/pinnacle-senior-center",
     "service_area": ["Fort Bend", "Katy"],
     "tags": ["fitness", "aquatic center", "technology", "seniors"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.58555,
+    "lng": -95.472714
   },
   {
     "id": "houston-area-agency-on-aging",
@@ -1056,7 +1559,9 @@
     "website": "https://www.houstontx.gov/health/Aging/",
     "service_area": ["Harris", "Katy"],
     "tags": ["caregiver support", "nutrition", "in-home care", "benefits"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.69303,
+    "lng": -95.408238
   },
   {
     "id": "fort-bend-seniors-meals-on-wheels",
@@ -1068,7 +1573,9 @@
     "website": "https://fortbendseniors.org/",
     "service_area": ["Fort Bend", "Katy"],
     "tags": ["nutrition", "meals on wheels", "food security", "seniors"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.51727,
+    "lng": -95.808262
   },
   {
     "id": "arc-of-fort-bend",
@@ -1080,7 +1587,9 @@
     "website": "https://arcoffortbend.org/",
     "service_area": ["Fort Bend", "Katy"],
     "tags": ["advocacy", "IDD", "resource hub", "support"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.63152,
+    "lng": -95.601551
   },
   {
     "id": "twc-vocational-rehab",
@@ -1104,7 +1613,9 @@
     "website": "https://www.h-gac.com/area-agency-on-aging",
     "service_area": ["Fort Bend", "Harris", "Katy"],
     "tags": ["Medicare", "benefits", "counseling", "regional"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.734287,
+    "lng": -95.435603
   },
   {
     "id": "metrolift",
@@ -1128,7 +1639,9 @@
     "website": "https://www.fortbendcountytx.gov/government/departments/public-transportation",
     "service_area": ["Fort Bend", "Katy"],
     "tags": ["transportation", "accessibility", "transit", "county"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.631395,
+    "lng": -95.602745
   },
   {
     "id": "easterseals-greater-houston",
@@ -1140,7 +1653,9 @@
     "website": "https://www.eastersealshouston.org/",
     "service_area": ["Harris", "Fort Bend", "Katy"],
     "tags": ["early intervention", "therapy", "veterans", "disability"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.725162,
+    "lng": -95.456923
   },
   {
     "id": "texas-hhs-adrc",
@@ -1164,9 +1679,10 @@
     "website": "https://www.ssa.gov",
     "service_area": ["Katy", "Cinco Ranch", "Fort Bend", "Harris"],
     "tags": ["SSDI", "SSI", "retirement", "federal", "benefits"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.79277,
+    "lng": -95.747963
   },
-
   {
     "id": "katy-isd-transportation",
     "name": "Katy ISD Transportation Department",
@@ -1177,7 +1693,9 @@
     "website": "https://www.katyisd.org/transportation-d",
     "service_area": ["Katy", "Cinco Ranch"],
     "tags": ["school bus", "K-12", "student safety", "SMART Tag"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.804077,
+    "lng": -95.813175
   },
   {
     "id": "ridemetro",
@@ -1191,7 +1709,6 @@
     "tags": ["public transit", "bus", "park and ride", "commuter"],
     "status": "active"
   },
-
   {
     "id": "city-of-katy-oem",
     "name": "City of Katy Office of Emergency Management",
@@ -1202,7 +1719,9 @@
     "website": "https://www.cityofkaty.com/government/city-departments/fire-department/office-of-emergency-management",
     "service_area": ["Katy"],
     "tags": ["disaster planning", "EOC", "resilience", "public safety"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.792072,
+    "lng": -95.824777
   },
   {
     "id": "fort-bend-hsem",
@@ -1214,7 +1733,9 @@
     "website": "https://www.fortbendcountytx.gov/government/departments/homeland-security-emergency-management",
     "service_area": ["Fort Bend"],
     "tags": ["hurricane prep", "evacuation", "county alerts", "recovery"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.579085,
+    "lng": -95.759683
   },
   {
     "id": "readyharris",
@@ -1225,7 +1746,12 @@
     "phone": "",
     "website": "https://www.readyharris.org",
     "service_area": ["Harris", "Katy"],
-    "tags": ["emergency alerts", "flood updates", "disaster recovery", "Harris County"],
+    "tags": [
+      "emergency alerts",
+      "flood updates",
+      "disaster recovery",
+      "Harris County"
+    ],
     "status": "active"
   },
   {
@@ -1274,7 +1800,9 @@
     "website": "https://www.fortbendcountytx.gov/government/departments/drainage-district",
     "service_area": ["Fort Bend"],
     "tags": ["drainage", "flood control", "infrastructure", "monitoring"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.767236,
+    "lng": -95.731145
   },
   {
     "id": "stear",
@@ -1298,7 +1826,9 @@
     "website": "https://www.redcross.org/local/texas/gulf-coast.html",
     "service_area": ["Fort Bend", "Harris", "Katy"],
     "tags": ["sheltering", "disaster relief", "recovery", "support"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.731527,
+    "lng": -95.420359
   },
   {
     "id": "tdem",
@@ -1322,7 +1852,9 @@
     "website": "https://www.weather.gov/hgx/",
     "service_area": ["Fort Bend", "Harris", "Katy"],
     "tags": ["weather forecast", "storm warnings", "radar", "hurricanes"],
-    "status": "active"
+    "status": "active",
+    "lat": 29.416796,
+    "lng": -95.092288
   },
   {
     "id": "centerpoint-outage-map",
@@ -1337,3 +1869,4 @@
     "status": "active"
   }
 ]
+
