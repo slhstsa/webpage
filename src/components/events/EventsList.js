@@ -90,7 +90,7 @@ export default function EventsList() {
   }, [category, location, query]);
 
   return (
-    <div className="page-wrapper">
+    <div className="page-wrapper events-page">
       <h1>
         Browse Over 
         <span className="hundred">
@@ -98,6 +98,7 @@ export default function EventsList() {
           <span className="zero">0</span>
           <span className="zero-second"></span>
         </span> 
+        <br />
         Events
       </h1>
       <h2>Upcoming Events ({filtered.length})</h2>
@@ -111,7 +112,7 @@ export default function EventsList() {
           />
           <input
             type="text"
-            placeholder="Search events..."
+            placeholder="Search events…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="bar-this"
@@ -179,7 +180,7 @@ export default function EventsList() {
                   </div>
                   {href ? (
                     <span style={{ color: "var(--accent)" }}>
-                      View details
+                      View details →
                     </span>
                   ) : null}
                 </div>

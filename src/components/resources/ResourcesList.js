@@ -3,23 +3,25 @@ import "../styles/pages.css";
 import resources from "../../data/resources.json";
 
 export default function ResourcesList() {
+    const ALL_CATEGORIES = "All Categories";
+    const ALL_REGIONS = "All Regions";
     const live = (resources || []).filter(
         r => r && (r.status === "active" || r.status === "published")
     );
 
-    const [category, setCategory] = useState("All");
-    const [area, setArea] = useState("All");
+    const [category, setCategory] = useState(ALL_CATEGORIES);
+    const [area, setArea] = useState(ALL_REGIONS);
     const [query, setQuery] = useState("");
 
-    const categories = ["All Categories", ...new Set(live.map(r => r.category).filter(Boolean))];
-    const areas = ["All Regions", ...new Set(live.flatMap(r => r.service_area || []).filter(Boolean))];
+    const categories = [ALL_CATEGORIES, ...new Set(live.map(r => r.category).filter(Boolean))];
+    const areas = [ALL_REGIONS, ...new Set(live.flatMap(r => r.service_area || []).filter(Boolean))];
 
     const filtered = useMemo(() => {
         const q = query.trim().toLowerCase();
 
         return live.filter(r => {
-            const okCategory = category === "All" || r.category === category;
-            const okArea = area === "All" || (r.service_area || []).includes(area);
+            const okCategory = category === ALL_CATEGORIES || r.category === category;
+            const okArea = area === ALL_REGIONS || (r.service_area || []).includes(area);
 
             const okQuery =
                 !q ||
@@ -33,7 +35,7 @@ export default function ResourcesList() {
 
     return (
         
-        <div className="page-wrapper">
+        <div className="page-wrapper resources-page">
             <h1>
                 Browse Over 
                 <span class="hundred">

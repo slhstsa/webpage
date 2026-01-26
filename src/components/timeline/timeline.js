@@ -5,20 +5,31 @@ const tsaImage = `${process.env.PUBLIC_URL}/images/tsa-logo.png`;
 
 const timelineData = [
   {
+    id: -1,
+    year: "pre-1800s",
+    title: "Native Land",
+    description:
+      "Before european colonization, Katy was prairie land used by the Karankawa Native tribes. ",
+    fact: "Before coming under American territory, Katy was a part of Spain, France, Mexico, and the Republic of Texas.",
+    image: `${process.env.PUBLIC_URL}/images/prairie.jpg`,
+  },
+  {
     id: 0,
     year: "1893",
     title: "Railroad Beginnings",
     description:
       "Katy is founded as a railroad stop along the Missouri-Kansas-Texas (MKT) Railroad.",
-    image: tsaImage,
+    fact: "Katy actually owes its name to this railroad! It became colloquially known as the K-T (Katy) by its riders.",
+    image: `${process.env.PUBLIC_URL}/images/MKT.svg`,
   },
   {
     id: 1,
     year: "Early 1900s",
     title: "Rice Capital of the World",
     description:
-      "Irrigation and farming take off, earning Katy its long-running rice capital nickname.",
-    image: tsaImage,
+      "Thanks to the industrial developments in irrigation and farming, earning Katy its long-running nickname as the rice-capital.",
+    fact: "Katy actually suffered a huge hit at the start of the 1900s from the Hurrican of 1900 that destroyed much of the town.",
+    image: `${process.env.PUBLIC_URL}/images/rice.jpg`,
   },
   {
     id: 2,
@@ -26,7 +37,9 @@ const timelineData = [
     title: "Agriculture Shifts",
     description:
       "Rice farming declines and the local economy begins transitioning beyond agriculture.",
-    image: tsaImage,
+    fact:
+      "It was during this time that Katy was officially incorporated as a city.",
+    image: `${process.env.PUBLIC_URL}/images/cityofkaty.jpg`,
   },
   {
     id: 3,
@@ -34,7 +47,9 @@ const timelineData = [
     title: "Interstate 10 Growth",
     description:
       "Construction of Interstate 10 accelerates suburban development and regional access.",
-    image: tsaImage,
+      fact:
+      "While I-10 was under construction since 1957, the final stretch of the highway was not finished until 1990.",
+    image: `${process.env.PUBLIC_URL}/images/I-10.svg`,
   },
   {
     id: 4,
@@ -42,7 +57,9 @@ const timelineData = [
     title: "Master-Planned Boom",
     description:
       "Rapid population growth leads to major expansion and master-planned communities.",
-    image: tsaImage,
+      fact:
+      "During this time Katy grew from around 8000 people to over 11000. Katy saw a 3000 person increase!",
+    image: `${process.env.PUBLIC_URL}/images/katy-hero.jpg`,
   },
   {
     id: 5,
@@ -50,7 +67,9 @@ const timelineData = [
     title: "Continued Urban Growth",
     description:
       "Katy continues to grow with new neighborhoods, businesses, and community services.",
-    image: tsaImage,
+      fact:
+      "In 1919 KISD was found with only 1 school, and it now registers over 85,000 students and over 40 schools",
+    image: `${process.env.PUBLIC_URL}/images/Katy-Tower.jpg`,
   },
 ];
 
@@ -99,6 +118,7 @@ function Timeline() {
         <div className="content-card">
           <h2>{timelineData[activeIndex].year}</h2>
           <p>{timelineData[activeIndex].description}</p>
+          <div className="fun-fact"> Fun Fact: {timelineData[activeIndex].fact}</div>
         </div>
       </div>
 
@@ -125,12 +145,13 @@ function Timeline() {
         })}
       </div>
 
+      <div className="image-box-timeline">
       <img
         src={timelineData[activeIndex].image}
         alt="TSA logo"
         className="year-image"
       />
-
+      </div>
       
     </div>
   );

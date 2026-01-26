@@ -112,6 +112,11 @@ function Documentation() {
           <h2 className="doc-heading">Sources</h2>
           <ul className="doc-list doc-sources">
             <li>
+              <a href="https://www.cityofkaty.com/about/city-history" target="_blank" rel="noreferrer">
+                Katy, TX History Source (City of Katy)
+              </a>
+            </li>
+            <li>
               <a href="https://www.shutterstock.com/image-photo/katy-tx-view-air-drone-2277819783" target="_blank" rel="noreferrer">
                 Katy, TX aerial view (Shutterstock)
               </a>
@@ -139,6 +144,36 @@ function Documentation() {
             <li>
               <a href="https://commons.wikimedia.org/wiki/File:Richmond_TX_George_Library.JPG" target="_blank" rel="noreferrer">
                 George Memorial Library, Richmond TX (Wikimedia Commons)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.flickr.com/photos/8113246@N02/2546920569/in/photolist-4T4CKB-4ZtwBa-GVotW2-7LL1RE-bAT1vj-6CeBzg-96xE25-cuGFhh-9qaxyu-8MB83W-9qfVNR-96Qbs3-7NcYEy-7oRh8N-28NyyD8-9vQyUc-x5LvnQ-LYiC95-LYiCgu-d4KcxG-9stbWU-MSKdQQ-4TABMQ-w9qUcy-27zgu19-wNVGyb-LYiCAC-qLPKXv-MSKd25-MSKdn5-MSKcJ1-quyDBB-2ajZDdF-pQd6mP-MKJCdG-LYiCkC-w9Emye-MSKcv5-x4dwfA-MKJBQC-LYiCsm-quq661-4T4WxQ-4Ud7xq-7KFZuD-59qaoH-4T4Wuj-4UZFSg-4SUSPX-4V4VuU" target="_blank" rel="noreferrer">
+                Katy Prairie Image (flickr)
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wihttps://commons.wikimedia.org/wiki/File:Missouri,_Kansas_and_Texas_Railway_system_map_(1918).svg" target="_blank" rel="noreferrer">
+                Map of Missouri-Kansas-Texas Railroad (Wikimedia Commons)
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:Mature_Rice_(India)_by_Augustus_Binu.jpg" target="_blank" rel="noreferrer">
+                Photo of Mature Rice (Wikimedia Commons)
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:Richmond_TX_George_Library.JPGhttps://en.wikipedia.org/wiki/File:City_of_katy_logo.png" target="_blank" rel="noreferrer">
+                City of Katy Logo (Wikimedia Commons)
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:I-10.svg" target="_blank" rel="noreferrer">
+                Interstate 10 logo(Wikimedia Commons)
+              </a>
+            </li>
+            <li>
+              <a href="https://communityimpact.com/houston/katy/government/2020/02/25/new-mural-to-be-painted-on-katy-water-tank/#&gid=1&pid=1" target="_blank" rel="noreferrer">
+                Katy Water tower (Community Impact)
               </a>
             </li>
           </ul>
