@@ -17,7 +17,7 @@
 .polaroid-text{
   font-family: 'Yearbook Solid W01';
   text-align: center;
-  color:#606c38;
+  color: var(--text-main);
   font-size: 80px;
 }
 
