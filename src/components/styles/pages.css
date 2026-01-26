@@ -130,11 +130,10 @@
 }
 
 .info-card {
-  border: 1.5px solid var(--border-muted);
+  border: 2px solid black;
   border-radius: 0;
   padding: 14px 16px;
   background: rgba(255, 255, 255, 0.65);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
   transition:
     transform 0.15s ease,
     box-shadow 0.2s ease,
@@ -142,8 +141,9 @@
     background-color 0.2s ease;
   display: flex;
   flex-direction: column;
+  border-radius: 4px;
   gap: 8px;
-  
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.44);
 }
 
 .info-card.clickable {
@@ -152,9 +152,7 @@
 
 .info-card:hover {
   transform: translateY(-2px);
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  box-shadow: 0 14px 28px rgba(196, 62, 92, 0.18);
+  box-shadow: 3px 3px rgb(0,0,0, 1);
 }
 
 .info-card .pill-row {
@@ -169,6 +167,8 @@
   border: 1px solid #ccc;
   border-radius: 999px;
   background: rgba(0, 0, 0, 0.03);
+  font-family: "DIN Condensed Web";
+  font-size: 18px;
 }
 
 .info-card .top-row,
@@ -181,6 +181,7 @@
 
 .info-card .muted {
   opacity: 0.8;
+  font-family: 'DIN Condensed Web';
 }
 
 .page-cta-row {

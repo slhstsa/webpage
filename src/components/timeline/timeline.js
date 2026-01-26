@@ -56,7 +56,7 @@ const timelineData = [
     description:
       "Rapid population growth leads to major expansion and master-planned communities.",
     fact: "During this time Katy grew from around 8000 people to over 11000. Katy saw a 3000 person increase!",
-    image: `${process.env.PUBLIC_URL}/images/katy-hero.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/katy-view.jpg`,
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const timelineData = [
     description:
       "Katy continues to grow with new neighborhoods, businesses, and community services.",
     fact: "In 1919 KISD was found with only 1 school, and it now registers over 85,000 students and over 40 schools",
-    image: `${process.env.PUBLIC_URL}/images/Katy-Tower.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/2nd-katy-stock.jpg`,
   },
 ];
 
