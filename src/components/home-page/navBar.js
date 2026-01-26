@@ -7,22 +7,14 @@ const NAV_ITEMS = [
   { label: "Resources", to: "/resources" },
   { label: "Events", to: "/events" },
   { label: "Map", to: "/map" },
-  { label: "Timeline", to: "/timeline" }
+  { label: "Timeline", to: "/timeline" },
+  { label: "References", to: "/documentation" }
 ];
 
-const MORE_ITEMS = [
-  { label: "References", to: "/documentation" },
-  { label: "Resources", to: "/resources" },
-  { label: "Events", to: "/events" }
-];
-
-const MOBILE_ITEMS = Array.from(
-  new Map([...NAV_ITEMS, ...MORE_ITEMS].map((item) => [item.to, item])).values()
-);
+const MOBILE_ITEMS = NAV_ITEMS;
 
 function Navigation() {
   const navigate = useNavigate();
-  const [dropdownValue, setDropdownValue] = useState("");
   const [mobileValue, setMobileValue] = useState("");
   const [isCompact, setIsCompact] = useState(false);
 
@@ -38,14 +30,6 @@ function Navigation() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const select = (event) => {
-    const path = event.target.value;
-    if (path) {
-      navigate(path);
-      setDropdownValue("");
-    }
-  };
 
   const selectMobile = (event) => {
     const path = event.target.value;
@@ -97,24 +81,7 @@ function Navigation() {
           </select>
         </div>
 
-        <div className="nav-actions">
-          <div className="more-dropdown">
-            <select
-              className="header-link"
-              onChange={select}
-              value={dropdownValue}
-            >
-              <option value="" disabled>
-                More
-              </option>
-              {MORE_ITEMS.map(item => (
-                <option key={item.to} value={item.to}>
-                  {item.label}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
+        <div className="nav-actions" />
       </div>
     </div>
   );

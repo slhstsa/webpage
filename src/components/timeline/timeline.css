@@ -40,7 +40,7 @@
 }
 
 .fun-fact{
-  font-size: 10px;
+  font-size: 15px;
 }
 .content-card {
   background: white;
@@ -129,7 +129,7 @@
 }
 
 .year-image {
-    height:150px; 
+    height:300px; 
     width:auto; 
     margin-top: 415px;
     border-radius: 25px;
