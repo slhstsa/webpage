@@ -122,6 +122,15 @@ function Timeline() {
         </div>
       </div>
 
+      <div className="image-mask-container">
+        <img
+          src={timelineData[activeIndex].image}
+          alt="TSA logo"
+          className="masked-image"
+          key={activeIndex}
+        />
+      </div>
+
       <div
         className="circular-timeline"
         style={{ transform: `rotate(${currentRotation}deg)` }}
@@ -144,15 +153,6 @@ function Timeline() {
           );
         })}
       </div>
-
-      <div className="image-box-timeline">
-      <img
-        src={timelineData[activeIndex].image}
-        alt="TSA logo"
-        className="year-image"
-      />
-      </div>
-      
     </div>
   );
 }
