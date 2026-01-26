@@ -134,6 +134,10 @@ function Map() {
             zoom={13}
             style={{ height: "70vh", minHeight: "420px", width: "100%" }}
             scrollWheelZoom={true}
+            tap={true}
+            touchZoom={true}
+            dragging={true}
+            zoomControl={true}
           >
             <MapEventHandler
               onBoundsChange={handleBoundsChange}
