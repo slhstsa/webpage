@@ -90,7 +90,7 @@ export default function ResourcesList() {
                         >
                             <div className={`info-card ${href ? "clickable" : ""}`}>
                                 <div className="top-row">
-                                    <div style={{ fontWeight: 700 }}>{r.name}</div>
+                                    <div className="resource-name">{r.name}</div>
                                     <div className="muted">{r.category}</div>
                                 </div>
 
