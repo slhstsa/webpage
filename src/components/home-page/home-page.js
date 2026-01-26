@@ -14,15 +14,27 @@ function Home() {
 
       <div className="polaroid-string">
         <div style={{ transform: "rotate(5deg)" }}>
-          <Polaroid imageurl={img("/images/katy-stock.jpg")} text="learn" />
+          <Polaroid
+            imageurl={img("/images/katy-stock.jpg")}
+            text="learn"
+            to="/timeline"
+          />
         </div>
 
-        <div style={{ transform: "rotate(-5deg)"}}>
-          <Polaroid imageurl={img("/images/katy-hero.jpg")} text="search" />
+        <div style={{ transform: "rotate(-5deg)" }}>
+          <Polaroid
+            imageurl={img("/images/katy-hero.jpg")}
+            text="search"
+            to="/map"
+          />
         </div>
 
         <div style={{ transform: "rotate(7deg)" }}>
-          <Polaroid imageurl={img("/images/katy-tx.jpg")} text="join" />
+          <Polaroid
+            imageurl={img("/images/katy-tx.jpg")}
+            text="join"
+            to="/resources"
+          />
         </div>
       </div>
       <About />
