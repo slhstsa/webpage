@@ -217,11 +217,11 @@ function Documentation() {
             </li>
             <li>
               <a
-                href="https://commons.wikimedia.org/wiki/File:Richmond_TX_George_Library.JPGhttps://en.wikipedia.org/wiki/File:City_of_katy_logo.png"
+                href="https://www.freepik.com/photos/aerial-suburbs?utm_medium=organic&utm_source=yandexsmartcamerag"
                 target="_blank"
                 rel="noreferrer"
               >
-                City of Katy Logo (Wikimedia Commons)
+                Suburban Overview (freepik)
               </a>
             </li>
             <li>
@@ -235,11 +235,21 @@ function Documentation() {
             </li>
             <li>
               <a
-                href="https://communityimpact.com/houston/katy/government/2020/02/25/new-mural-to-be-painted-on-katy-water-tank/#&gid=1&pid=1"
+                href="https://wanbridge.com/educate/moving-to-pearland-tx/?utm_medium=organic&utm_source=yandexsmartcamera"
                 target="_blank"
                 rel="noreferrer"
               >
-                Katy Water tower (Community Impact)
+                Sky High image of Pearland Texas(wanbridge)
+              </a>
+            </li>
+            
+            <li>
+              <a
+                href="https://www.cityofkaty.com/about/city-history"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Information over Katy History (City of Katy)
               </a>
             </li>
           </ul>

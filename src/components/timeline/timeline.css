@@ -30,10 +30,16 @@
 }
 
 .content-title {
-  font-family: "DIN Condensed Web";
+  font-family: "Yearbook Solid W01";
   font-size: 3rem;
-  color: #bc6c25; 
-  margin-top: 5px; 
+  letter-spacing: 2px;
+  color: black; 
+  margin-top: 0px; 
+  background-color: #bc6c25;
+  padding: 5px 0px 5px 0px;
+  border: 2px solid black;
+  box-shadow: 3px 3px rgba(0,0,0,.2);
+  border-radius: 6px;
   width: 600px;  
   margin-left: 50%; 
   transform: translateX(-50%);
@@ -81,8 +87,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-	transform: translateY(-400px) scale(1);
-	object-position: center 50%;
+	transform: translateY(-400px) scale(1) translateX(10px);
+	object-position: top 50%;
 	opacity: 0.8;
   animation: imageZoom 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -193,6 +199,12 @@
   .year-image {
     margin-top: 320px;
   }
+  .image-mask-container{
+    width: 1200px;
+    height: 1200px;
+    top: 240px;
+    margin-left: -600px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -210,6 +222,13 @@
   .year-image {
     height: 120px;
     margin-top: 350px;
+  }
+  
+  .image-mask-container{
+    width: 900px;
+    height: 900px;
+    top: 220px;
+    margin-left: -450px;
   }
 }
 
