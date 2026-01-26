@@ -76,6 +76,16 @@
   text-decoration: none;
   color: inherit;
 }
+
+.events-page .card-link,
+.resources-page .card-link {
+  display: flex;
+}
+
+.events-page .info-card,
+.resources-page .info-card {
+  flex: 1;
+}
 .bar-this{
   height: 10px;
   

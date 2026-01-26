@@ -35,7 +35,7 @@ export default function ResourcesList() {
 
     return (
         
-        <div className="page-wrapper">
+        <div className="page-wrapper resources-page">
             <h1>
                 Browse Over 
                 <span class="hundred">
