@@ -20,7 +20,7 @@ const timelineData = [
     description:
       "Katy is founded as a railroad stop along the Missouri-Kansas-Texas (MKT) Railroad.",
     fact: "Katy actually owes its name to this railroad! It became colloquially known as the K-T (Katy) by its riders.",
-    image: `${process.env.PUBLIC_URL}/images/MKT.svg`,
+    image: `${process.env.PUBLIC_URL}/images/mkt_caboose.png`,
   },
   {
     id: 1,
@@ -34,12 +34,11 @@ const timelineData = [
   {
     id: 2,
     year: "1940s-1950s",
-    title: "Agriculture Shifts",
+    title: "Economic Shifts",
     description:
       "Rice farming declines and the local economy begins transitioning beyond agriculture.",
-    fact:
-      "It was during this time that Katy was officially incorporated as a city.",
-    image: `${process.env.PUBLIC_URL}/images/cityofkaty.jpg`,
+    fact: "It was during this time that Katy was officially incorporated as a city.",
+    image: `${process.env.PUBLIC_URL}/images/horses.jpg`,
   },
   {
     id: 3,
@@ -47,9 +46,8 @@ const timelineData = [
     title: "Interstate 10 Growth",
     description:
       "Construction of Interstate 10 accelerates suburban development and regional access.",
-      fact:
-      "While I-10 was under construction since 1957, the final stretch of the highway was not finished until 1990.",
-    image: `${process.env.PUBLIC_URL}/images/I-10.svg`,
+    fact: "While I-10 was under construction since 1957, the final stretch of the highway was not finished until 1990.",
+    image: `${process.env.PUBLIC_URL}/images/i10.jpeg`,
   },
   {
     id: 4,
@@ -57,8 +55,7 @@ const timelineData = [
     title: "Master-Planned Boom",
     description:
       "Rapid population growth leads to major expansion and master-planned communities.",
-      fact:
-      "During this time Katy grew from around 8000 people to over 11000. Katy saw a 3000 person increase!",
+    fact: "During this time Katy grew from around 8000 people to over 11000. Katy saw a 3000 person increase!",
     image: `${process.env.PUBLIC_URL}/images/katy-hero.jpg`,
   },
   {
@@ -67,8 +64,7 @@ const timelineData = [
     title: "Continued Urban Growth",
     description:
       "Katy continues to grow with new neighborhoods, businesses, and community services.",
-      fact:
-      "In 1919 KISD was found with only 1 school, and it now registers over 85,000 students and over 40 schools",
+    fact: "In 1919 KISD was found with only 1 school, and it now registers over 85,000 students and over 40 schools",
     image: `${process.env.PUBLIC_URL}/images/Katy-Tower.jpg`,
   },
 ];
@@ -118,8 +114,20 @@ function Timeline() {
         <div className="content-card">
           <h2>{timelineData[activeIndex].year}</h2>
           <p>{timelineData[activeIndex].description}</p>
-          <div className="fun-fact"> Fun Fact: {timelineData[activeIndex].fact}</div>
+          <div className="fun-fact">
+            {" "}
+            Fun Fact: {timelineData[activeIndex].fact}
+          </div>
         </div>
+      </div>
+
+      <div className="image-mask-container">
+        <img
+          src={timelineData[activeIndex].image}
+          alt="TSA logo"
+          className="masked-image"
+          key={activeIndex}
+        />
       </div>
 
       <div
@@ -144,15 +152,6 @@ function Timeline() {
           );
         })}
       </div>
-
-      <div className="image-box-timeline">
-      <img
-        src={timelineData[activeIndex].image}
-        alt="TSA logo"
-        className="year-image"
-      />
-      </div>
-      
     </div>
   );
 }
