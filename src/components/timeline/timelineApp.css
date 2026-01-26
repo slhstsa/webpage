@@ -3,3 +3,71 @@
   width: 100%;
   justify-self: center;
 }
+
+.timeline-header{
+  background-color: #606c38;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding-top: 0px;
+  
+}
+
+.timeline-header span{
+  font-size: 27px;
+  
+  background-color: #bc6c25;
+  border-radius: 3px;
+  border: 2px solid black;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  box-shadow: 2px 2px rgba(0,0,0, .5);
+}
+
+.timeline-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.timeline-header p{
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 120px;
+  font-family: "DIN Condensed Web";
+  margin-top: 0px;
+  font-size: 150px;
+}
+
+
+
+.timeline-header .line{
+  height: 0px;
+  border-top: 4px solid black;
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+}
+
+.timeline-header .dot{
+  
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border: 4px solid #606c38; 
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 2;
+  box-shadow: 0 0 0 1px black;
+  margin-top: -18px; 
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.timeline-header .dot:hover {
+  transform: scale(1.2);
+}
