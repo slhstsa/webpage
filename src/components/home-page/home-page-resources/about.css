@@ -250,3 +250,10 @@
     height: 280px;
   }
 }
+
+@media (max-width: 768px) {
+  .right-section,
+  .about-image {
+    display: none;
+  }
+}
