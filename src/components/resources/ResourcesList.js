@@ -104,7 +104,7 @@ export default function ResourcesList() {
                 >
                   <div className={`info-card ${href ? "clickable" : ""}`}>
                     <div className="top-row">
-                      <div className="resource-name">{r.name}</div>
+                      <div className="card-title">{r.name}</div>
                       <div className="muted">{r.category}</div>
                     </div>
 

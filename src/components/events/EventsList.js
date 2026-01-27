@@ -138,56 +138,60 @@ export default function EventsList() {
         </select>
       </div>
 
-      <div className="card-grid">
-        {filtered.map((e) => {
-          const href = toHref(e.website || e.url || KATY_EVENTS_URL);
-          const Wrapper = href ? "a" : "div";
-          const repeats = recurrenceLabel(e.recurrence);
+      <div className="resources-container">
+        <div className="cards-container">
+          <div className="card-grid">
+            {filtered.map((e) => {
+              const href = toHref(e.website || e.url || KATY_EVENTS_URL);
+              const Wrapper = href ? "a" : "div";
+              const repeats = recurrenceLabel(e.recurrence);
 
-          return (
-            <Wrapper
-              key={e.id}
-              className="card-link"
-              {...(href ? { href, target: "_blank", rel: "noreferrer" } : {})}
-            >
-              <div className={`info-card ${href ? "clickable" : ""}`}>
-                <div className="top-row">
-                  <div style={{ fontWeight: 700 }}>{e.title}</div>
-                  <div className="muted">{e.category}</div>
-                </div>
+              return (
+                <Wrapper
+                  key={e.id}
+                  className="card-link"
+                  {...(href ? { href, target: "_blank", rel: "noreferrer" } : {})}
+                >
+                  <div className={`info-card ${href ? "clickable" : ""}`}>
+                    <div className="top-row">
+                      <div className="card-title">{e.title}</div>
+                      <div className="muted">{e.category}</div>
+                    </div>
 
-                <div className="muted">{toDateLabel(e.start)}</div>
-                {repeats ? <div className="muted">{repeats}</div> : null}
+                    <div className="muted">{toDateLabel(e.start)}</div>
+                    {repeats ? <div className="muted">{repeats}</div> : null}
 
-                {e.locationName ? (
-                  <div className="muted">{e.locationName}</div>
-                ) : null}
-                {e.address ? <div className="muted">{e.address}</div> : null}
+                    {e.locationName ? (
+                      <div className="muted">{e.locationName}</div>
+                    ) : null}
+                    {e.address ? <div className="muted">{e.address}</div> : null}
 
-                {e.tags && e.tags.length ? (
-                  <div className="pill-row">
-                    {e.tags.slice(0, 6).map((t) => (
-                      <span key={t} className="pill">
-                        {t}
-                      </span>
-                    ))}
+                    {e.tags && e.tags.length ? (
+                      <div className="pill-row">
+                        {e.tags.slice(0, 6).map((t) => (
+                          <span key={t} className="pill">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
+
+                    <div className="meta-row">
+                      <div className="muted">
+                        {e.cost ? <span>Cost: {e.cost}</span> : null}
+                      </div>
+                      {href ? (
+                        <span style={{ color: "var(--accent)" }}>
+                          View details →
+                        </span>
+                      ) : null}
+                    </div>
                   </div>
-                ) : null}
-
-                <div className="meta-row">
-                  <div className="muted">
-                    {e.cost ? <span>Cost: {e.cost}</span> : null}
-                  </div>
-                  {href ? (
-                    <span style={{ color: "var(--accent)" }}>
-                      View details →
-                    </span>
-                  ) : null}
-                </div>
-              </div>
-            </Wrapper>
-          );
-        })}
+                </Wrapper>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
