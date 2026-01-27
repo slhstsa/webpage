@@ -9,7 +9,7 @@ function About() {
           <div className='about-text-area'>
               <h2>About Us</h2>
             <p>
-              Good Old Katy is a resource hub and center for all things Houston and Katy texas. We demonstrate the many opportunities and resources of over 600 square miles of texan land. Our mission is to display the rich history of Katy and offer our aid to all of its inhabitants.
+              Good Old Katy is a community hub and center for all things Houston and Katy Texas. We demonstrate the many opportunities and resources of over 600 square miles of Texan land. Our mission is to display the rich history of Katy and offer our aid to all of its inhabitants.
             </p>
             
           </div>
