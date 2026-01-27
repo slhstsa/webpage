@@ -97,8 +97,7 @@ export default function EventsList() {
           <span className="one"> 1</span>
           <span className="zero">5</span>
           <span className="zero-second"></span>
-        </span> 
-        <br />
+        </span>{" "}
         Events
       </h1>
       <h2>Upcoming Events ({filtered.length})</h2>
