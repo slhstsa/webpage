@@ -39,7 +39,7 @@ function Tabbed(){
             </div>
             <div className="right-area">
               <p>
-                The Houston community is one of uplifting one another and helping each other through hard times. Especially was we approach winter storm season there is no better time to explore all the different resources and services Katy has to offer. Use our huge catalogue of resources to enrich your life in Katy. From food banks to libraries to shelters, there are hundreds of different ways to pitch in and help in your community.
+                The Houston community is one of uplifting one another and helping each other through hard times. Especially as we approach winter-storm season, there is no better time to explore all the different resources and services Katy has to offer. Use our huge catalogue of resources to enrich your life in Katy. From food banks to libraries to shelters, there are hundreds of different ways to pitch in and help in your community.
               </p>
               <div className='link-holder'>
                 <Link to="/resources" className='link-tab'>
@@ -61,7 +61,7 @@ function Tabbed(){
             </div>
             <div className="right-area">
               <p>
-                The Good Old Katy project is not just about helping Houstonians, but also about connecting Katy together. Here we offer a look into many different events and ways Katy citizens can connect with eachother and join their greater community. From christmas socials, game nights, and markets, we offer a look into many different events throughout the year. Additionally, help contribute to the Good Old Katy project by suggesting resources and events that are lacking in our community.
+                The Good Old Katy project is not just about helping Houstonians, but also about connecting Katy together. Here we offer a look into many different events and ways Katy citizens can connect with eachother and join their greater community. From Christmas socials, game nights, and markets, we offer a look into many different events throughout the year. Additionally, help contribute to the Good Old Katy project by suggesting resources and events that are lacking in our community.
               </p>
               <div className='link-holder'>
                 <Link to="/events" className='link-tab'>

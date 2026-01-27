@@ -13,8 +13,8 @@ function Documentation() {
           Community <span className="doc-title-accent">Reference</span>
         </h1>
         <p className="doc-subtitle">
-          A quick guide to the Good Old Katy hub, its layout, and the imagery that
-          helps tell our story.
+          A quick guide to the Good Old Katy hub, its layout, and the imagery
+          that helps tell our story.
         </p>
       </header>
 
@@ -23,17 +23,19 @@ function Documentation() {
           <h2 className="doc-heading">Community Corner</h2>
           <p>
             Good Old Katy is a community-built hub that gathers local resources,
-            events, and history into one welcoming place. We spotlight neighbors,
-            organizations, and stories that make Katy feel connected and alive.
+            events, and history into one welcoming place. We spotlight
+            neighbors, organizations, and stories that make Katy feel connected
+            and alive.
           </p>
         </section>
 
         <section className="doc-card">
           <h2 className="doc-heading">How This Hub Helps</h2>
           <p>
-            Use the site to discover services, track local happenings, explore the
-            map, and step through the timeline of Katy's growth. Everything here
-            is organized to keep the community informed, supported, and inspired.
+            Use the site to discover services, track local happenings, explore
+            the map, and step through the timeline of Katy's growth. Everything
+            here is organized to keep the community informed, supported, and
+            inspired.
           </p>
         </section>
 
@@ -47,17 +49,29 @@ function Documentation() {
               <div>
                 <h3>General</h3>
                 <ul className="doc-list">
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/documentation">Documentation</Link></li>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/documentation">Documentation</Link>
+                  </li>
                 </ul>
               </div>
               <div>
                 <h3>Explore</h3>
                 <ul className="doc-list">
-                  <li><Link to="/resources">Resources</Link></li>
-                  <li><Link to="/events">Events</Link></li>
-                  <li><Link to="/map">Map</Link></li>
-                  <li><Link to="/timeline">Timeline</Link></li>
+                  <li>
+                    <Link to="/resources">Resources</Link>
+                  </li>
+                  <li>
+                    <Link to="/events">Events</Link>
+                  </li>
+                  <li>
+                    <Link to="/map">Map</Link>
+                  </li>
+                  <li>
+                    <Link to="/timeline">Timeline</Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -112,68 +126,130 @@ function Documentation() {
           <h2 className="doc-heading">Sources</h2>
           <ul className="doc-list doc-sources">
             <li>
-              <a href="https://www.cityofkaty.com/about/city-history" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.cityofkaty.com/about/city-history"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Katy, TX History Source (City of Katy)
               </a>
             </li>
             <li>
-              <a href="https://www.shutterstock.com/image-photo/katy-tx-view-air-drone-2277819783" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.shutterstock.com/image-photo/katy-tx-view-air-drone-2277819783"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Katy, TX aerial view (Shutterstock)
               </a>
             </li>
             <li>
-              <a href="https://www.istockphoto.com/photo/houston-texas-downtown-drone-skyline-aerial-gm2168127480-588161879" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.istockphoto.com/photo/houston-texas-downtown-drone-skyline-aerial-gm2168127480-588161879"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Downtown skyline aerial (iStock)
               </a>
             </li>
             <li>
-              <a href="https://www.homes.com/local-guide/katy-tx/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.homes.com/local-guide/katy-tx/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Katy, TX local guide photo (Homes.com)
               </a>
             </li>
             <li>
-              <a href="https://www.houstonfoodbank.org/find-help/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.houstonfoodbank.org/find-help/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Houston Food Bank imagery (Houston Food Bank)
               </a>
             </li>
             <li>
-              <a href="https://www.houstontexans.com/photos/houston-texans-ymca-slideshow-3127811#5afa7194-9138-4310-b35a-3cd8c9fb4ce6" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.houstontexans.com/photos/houston-texans-ymca-slideshow-3127811#5afa7194-9138-4310-b35a-3cd8c9fb4ce6"
+                target="_blank"
+                rel="noreferrer"
+              >
                 YMCA community center photo (Houston Texans)
               </a>
             </li>
             <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Richmond_TX_George_Library.JPG" target="_blank" rel="noreferrer">
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Richmond_TX_George_Library.JPG"
+                target="_blank"
+                rel="noreferrer"
+              >
                 George Memorial Library, Richmond TX (Wikimedia Commons)
               </a>
             </li>
             <li>
-              <a href="https://www.flickr.com/photos/8113246@N02/2546920569/in/photolist-4T4CKB-4ZtwBa-GVotW2-7LL1RE-bAT1vj-6CeBzg-96xE25-cuGFhh-9qaxyu-8MB83W-9qfVNR-96Qbs3-7NcYEy-7oRh8N-28NyyD8-9vQyUc-x5LvnQ-LYiC95-LYiCgu-d4KcxG-9stbWU-MSKdQQ-4TABMQ-w9qUcy-27zgu19-wNVGyb-LYiCAC-qLPKXv-MSKd25-MSKdn5-MSKcJ1-quyDBB-2ajZDdF-pQd6mP-MKJCdG-LYiCkC-w9Emye-MSKcv5-x4dwfA-MKJBQC-LYiCsm-quq661-4T4WxQ-4Ud7xq-7KFZuD-59qaoH-4T4Wuj-4UZFSg-4SUSPX-4V4VuU" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.flickr.com/photos/8113246@N02/2546920569/in/photolist-4T4CKB-4ZtwBa-GVotW2-7LL1RE-bAT1vj-6CeBzg-96xE25-cuGFhh-9qaxyu-8MB83W-9qfVNR-96Qbs3-7NcYEy-7oRh8N-28NyyD8-9vQyUc-x5LvnQ-LYiC95-LYiCgu-d4KcxG-9stbWU-MSKdQQ-4TABMQ-w9qUcy-27zgu19-wNVGyb-LYiCAC-qLPKXv-MSKd25-MSKdn5-MSKcJ1-quyDBB-2ajZDdF-pQd6mP-MKJCdG-LYiCkC-w9Emye-MSKcv5-x4dwfA-MKJBQC-LYiCsm-quq661-4T4WxQ-4Ud7xq-7KFZuD-59qaoH-4T4Wuj-4UZFSg-4SUSPX-4V4VuU"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Katy Prairie Image (flickr)
               </a>
             </li>
             <li>
-              <a href="https://commons.wihttps://commons.wikimedia.org/wiki/File:Missouri,_Kansas_and_Texas_Railway_system_map_(1918).svg" target="_blank" rel="noreferrer">
-                Map of Missouri-Kansas-Texas Railroad (Wikimedia Commons)
+              <a
+                href="https://www.flickr.com/photos/reweston-sat/102481954/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Photo of the MKT train (Bob Weston)
               </a>
             </li>
             <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Mature_Rice_(India)_by_Augustus_Binu.jpg" target="_blank" rel="noreferrer">
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Mature_Rice_(India)_by_Augustus_Binu.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Photo of Mature Rice (Wikimedia Commons)
               </a>
             </li>
             <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Richmond_TX_George_Library.JPGhttps://en.wikipedia.org/wiki/File:City_of_katy_logo.png" target="_blank" rel="noreferrer">
-                City of Katy Logo (Wikimedia Commons)
+              <a
+                href="https://www.freepik.com/photos/aerial-suburbs?utm_medium=organic&utm_source=yandexsmartcamerag"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Suburban Overview (freepik)
               </a>
             </li>
             <li>
-              <a href="https://commons.wikimedia.org/wiki/File:I-10.svg" target="_blank" rel="noreferrer">
-                Interstate 10 logo(Wikimedia Commons)
+              <a
+                href="https://photos.wikimapia.org/p/00/02/12/32/16_full.jpeg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Photo of I10 (Wikimapia Commons)
               </a>
             </li>
             <li>
-              <a href="https://communityimpact.com/houston/katy/government/2020/02/25/new-mural-to-be-painted-on-katy-water-tank/#&gid=1&pid=1" target="_blank" rel="noreferrer">
-                Katy Water tower (Community Impact)
+              <a
+                href="https://wanbridge.com/educate/moving-to-pearland-tx/?utm_medium=organic&utm_source=yandexsmartcamera"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Sky High image of Pearland Texas(wanbridge)
+              </a>
+            </li>
+            
+            <li>
+              <a
+                href="https://www.cityofkaty.com/about/city-history"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Information over Katy History (City of Katy)
               </a>
             </li>
           </ul>

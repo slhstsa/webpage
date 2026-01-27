@@ -10,6 +10,8 @@
 }
 
 .nav-bar-container {
+  z-index: 1000;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,11 +34,6 @@
   animation-range-start: 110vh;
   animation-range-end: 120vh;
 }
-
-.nav-bar-container.compact {
-}
-
-
 .brand-mark {
   display: flex;
   flex-direction: column;
@@ -65,26 +62,20 @@
   font-family: "DIN Condensed Web", "Helvetica Neue", Arial, sans-serif;
   font-size: 25px;
 }
-
-.nav-bar-container.compact .brand-text {
-  font-size: 24px;
-}
-
-.nav-bar-container.compact .brand-subtext {
-  font-size: 19px;
-}
-
-
 .banner-links-header {
   flex: 1;
   display: flex;
   justify-content: center;
   min-width: 0;
 }
-
+@media (max-width: 1100px){
+  .brand-mark{
+    display: none;
+  }
+}
 .nav-links {
   display: flex;
-  gap: 1.4em;
+  gap: 1em;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -110,15 +101,6 @@
   background: #e3c18a;
   color: #1f1b16;
 }
-
-.nav-bar-container.compact .nav-links {
-  font-size: 20px;
-}
-
-.nav-bar-container.compact .nav-link {
-  padding: 0.3em 0.7em;
-}
-
 
 .nav-actions {
   display: flex;
@@ -220,12 +202,6 @@
 
 
 @media (max-width: 860px) {
-  .brand-mark {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    min-width: 0;
-  }
 
   .nav-actions input[type="search"],
   .nav-actions input {
@@ -238,19 +214,6 @@
     flex-wrap: wrap;
     height: auto;
     padding: 10px 12px 14px;
-  }
-
-  .brand-mark {
-    width: 100%;
-  }
-
-  .brand-text {
-    font-size: 24px;
-    letter-spacing: 0.04em;
-  }
-
-  .brand-subtext {
-    font-size: 18px;
   }
 
   .banner-links-header {
@@ -360,11 +323,5 @@
 @media (max-width: 720px) {
   .nav-bar-container {
     animation: none;
-  }
-
-  .nav-bar-container.compact {
-    height: auto;
-    padding: 10px 12px 14px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   }
 }

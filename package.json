@@ -1,6 +1,5 @@
 {
   "name": "katy-resource",
-  "homepage": "https://slhstsa.github.io/webpage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,8 +27,6 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
     ]
   },
   "browserslist": {
