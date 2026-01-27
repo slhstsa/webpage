@@ -38,7 +38,7 @@ const timelineData = [
     description:
       "Rice farming declines and the local economy begins transitioning beyond agriculture.",
     fact: "It was during this time that Katy was officially incorporated as a city.",
-    image: `${process.env.PUBLIC_URL}/images/horses.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/horses-real.jpg`,
   },
   {
     id: 3,
@@ -121,12 +121,22 @@ function Timeline() {
         </div>
       </div>
 
-      <div className="image-mask-container">
+      <div
+        className="image-mask-container"
+        style={{ transform: `rotate(${currentRotation * 0.6}deg)` }}
+      >
         <img
           src={timelineData[activeIndex].image}
-          alt="TSA logo"
+          alt=""
           className="masked-image"
           key={activeIndex}
+          style={{
+            transform: `
+      rotate(${-currentRotation * 0.6}deg)
+      scale(1.1)
+      translateY(-400px)
+    `,
+          }}
         />
       </div>
 
