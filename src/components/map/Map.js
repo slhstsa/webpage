@@ -61,6 +61,7 @@ function Map() {
   const mapRef = useRef(null);
   const markersRef = useRef([]);
   const isZoomingRef = useRef(false);
+  const markerRefs = useRef({});
 
   useEffect(() => {
     const validResources = resourcesData.filter(
@@ -100,18 +101,24 @@ function Map() {
   }, []);
 
   const handleResourceClick = (resource) => {
-    if (mapRef.current) {
-      isZoomingRef.current = true;
+    if (!mapRef.current) return;
 
-      mapRef.current.flyTo([resource.lat, resource.lng], 16, {
-        animate: true,
-        duration: 0.8,
-      });
+    isZoomingRef.current = true;
 
-      setTimeout(() => {
-        isZoomingRef.current = false;
-      }, 900);
-    }
+    const map = mapRef.current;
+
+    map.once("moveend", () => {
+      const marker = markerRefs.current[resource.id];
+      if (marker) {
+        marker.openPopup();
+      }
+      isZoomingRef.current = false;
+    });
+
+    map.flyTo([resource.lat, resource.lng], 16, {
+      animate: true,
+      duration: 0.8,
+    });
   };
 
   return (
@@ -153,6 +160,11 @@ function Map() {
               <Marker
                 key={marker.resource.id || index}
                 position={marker.position}
+                ref={(ref) => {
+                  if (ref && marker.resource.id) {
+                    markerRefs.current[marker.resource.id] = ref;
+                  }
+                }}
               >
                 <Popup>
                   <div className="popup-content">
