@@ -92,13 +92,12 @@ export default function EventsList() {
   return (
     <div className="page-wrapper events-page">
       <h1>
-        Browse Over 
+        Browse Over{" "}
         <span className="hundred">
           <span className="one"> 2</span>
           <span className="zero">0</span>
           <span className="zero-second"></span>
-        </span> 
-        <br />
+        </span>{" "}
         Events
       </h1>
       <h2>Upcoming Events ({filtered.length})</h2>
