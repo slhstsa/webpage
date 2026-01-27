@@ -4,7 +4,7 @@ function Footer(){
     <footer>
       <div className='footer'>
         <h2>
-          GOOD <span className="O">O</span><span className="L">L</span><span className="D">D</span> KATY
+          GOOD <span className='old-thing'><span className="O">O</span><span className="L">L</span><span className="D">D</span> </span>KATY
         </h2>
 
         <div className='subscribe-section'>
