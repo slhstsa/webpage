@@ -78,6 +78,8 @@ function Timeline() {
   const angleSep = 180 / (n + 1);
   const currentRotation = -(activeIndex * angleSep);
   const wrapperReference = useRef(null);
+  const goPrev = () => setActiveIndex((prev) => Math.max(prev - 1, 0));
+  const goNext = () => setActiveIndex((prev) => Math.min(prev + 1, n - 1));
 
   useEffect(() => {
     const handleWheel = (e) => {
@@ -161,6 +163,28 @@ function Timeline() {
             </div>
           );
         })}
+      </div>
+      <div className="wheel-nav">
+        <button
+          type="button"
+          className="wheel-button prev"
+          onClick={goPrev}
+          disabled={activeIndex === 0}
+          aria-label="Previous timeline entry"
+        >
+          <span className="wheel-arrow">&lt;</span>
+          <span className="wheel-text">Prev</span>
+        </button>
+        <button
+          type="button"
+          className="wheel-button next"
+          onClick={goNext}
+          disabled={activeIndex === n - 1}
+          aria-label="Next timeline entry"
+        >
+          <span className="wheel-text">Next</span>
+          <span className="wheel-arrow">&gt;</span>
+        </button>
       </div>
     </div>
   );
