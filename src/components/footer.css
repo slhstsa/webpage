@@ -5,8 +5,12 @@ footer h2{
   margin: 20px 0px 20px 50px;
 }
 
+footer{
+  background-color: #c18b4d;
+}
 .footer{
   display: flex;
+	background-color: #e3c18a;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -43,7 +47,7 @@ footer h2{
 .email-input button{
   height: 70%;
   align-self: center;
-  background-color: #dda15e;
+  background-color: #606c38;
   border-radius: 2px;
   border: 1px black solid;
   width: 60px;
@@ -121,4 +125,9 @@ footer h2{
     padding: 10px 0;
     font-size: 20px;
   }
+}
+
+.old-thing{
+  letter-spacing: 8px;
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000;
 }

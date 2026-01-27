@@ -4,11 +4,11 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 const NAV_ITEMS = [
   { label: "Home", to: "/" },
+  { label: "Map", to: "/map" },
   { label: "Resources", to: "/resources" },
   { label: "Events", to: "/events" },
-  { label: "Map", to: "/map" },
   { label: "Timeline", to: "/timeline" },
-  { label: "References", to: "/documentation" }
+  { label: "References", to: "/documentation" },
 ];
 
 const MOBILE_ITEMS = NAV_ITEMS;
@@ -43,7 +43,15 @@ function Navigation() {
     <div className="center-header">
       <div className={`nav-bar-container${isCompact ? " compact" : ""}`}>
         <div className="brand-mark">
-          <div className="brand-text">GOOD <span><span className="O">O</span><span className="L">L</span><span className="D">D </span></span>KATY</div>
+          <div className="brand-text">
+            GOOD{" "}
+            <span>
+              <span className="O">O</span>
+              <span className="L">L</span>
+              <span className="D">D </span>
+            </span>
+            KATY
+          </div>
           <span className="brand-subtext">Resource Hub</span>
         </div>
 
