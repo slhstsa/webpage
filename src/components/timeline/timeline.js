@@ -121,12 +121,22 @@ function Timeline() {
         </div>
       </div>
 
-      <div className="image-mask-container">
+      <div
+        className="image-mask-container"
+        style={{ transform: `rotate(${currentRotation * 0.6}deg)` }}
+      >
         <img
           src={timelineData[activeIndex].image}
-          alt="TSA logo"
+          alt=""
           className="masked-image"
           key={activeIndex}
+          style={{
+            transform: `
+      rotate(${-currentRotation * 0.6}deg)
+      scale(1.1)
+      translateY(-400px)
+    `,
+          }}
         />
       </div>
 
