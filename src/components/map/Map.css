@@ -26,12 +26,28 @@
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 2px 3px rgba(0, 0, 0, 1);
-  min-width: 0;
+  min-width: 80%;
   background: rgba(254, 250, 224, 1);
 }
 
 .map-wrapper .leaflet-container {
   border-radius: 0;
+}
+
+.leaflet-container {
+	touch-action: pan-x pan-y;
+}
+
+@media (max-width: 968px) {
+	.map-wrapper {
+		min-height: 400px;
+		height: 50vh;
+		min-width: 100%;
+	}
+
+	.map-wrapper .leaflet-container {
+		height: 100% !important;
+	}
 }
 
 .resources-sidebar {
@@ -45,6 +61,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+	-webkit-overflow-scrolling: touch;
 }
 
 .sidebar-header {
@@ -270,4 +287,8 @@
 
 .popup-content strong {
   color: var(--text-main);
+}
+
+.leaflet-control-zoom {
+	display: none;
 }
