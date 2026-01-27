@@ -8,6 +8,12 @@
   animation: popup 1s ease-out  forwards;
 }
 
+@media (max-width: 860px) {
+	.polaroid-string {
+		display: none !important;
+	}	
+}
+
 @keyframes popup
 {
   100%{

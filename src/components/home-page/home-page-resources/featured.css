@@ -41,9 +41,7 @@
   background-color: rgba(96, 108, 56, 1);
   transition: .2s ease-in-out;
 }
-.aspect:hover{
-  box-shadow: 4px 5px rgb(0,0,0);
-}
+
 .featured-info h2 span{
     font-size: 30px;
     margin-bottom: 5px;
