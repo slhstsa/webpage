@@ -38,7 +38,7 @@ const timelineData = [
     description:
       "Rice farming declines and the local economy begins transitioning beyond agriculture.",
     fact: "It was during this time that Katy was officially incorporated as a city.",
-    image: `${process.env.PUBLIC_URL}/images/horses.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/horses-real.jpg`,
   },
   {
     id: 3,

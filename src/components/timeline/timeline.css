@@ -87,7 +87,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-	transform: translateY(-400px) scale(1) translateX(10px);
+	transform: translateY(-400px) scale(1);
 	object-position: top 50%;
 	opacity: 0.8;
   animation: imageZoom 0.8s cubic-bezier(0.25, 1, 0.5, 1);
