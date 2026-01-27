@@ -16,7 +16,8 @@ L.Icon.Default.mergeOptions({
 });
 
 // Default center coordinates: 29°47'40.3"N 95°49'29.1"W (Katy, TX)
-const center = [29.7945, -95.8248];
+// 29.939345, -95.304114
+const center = [29.730367, -95.578197];
 
 function MapEventHandler({ onBoundsChange, isZoomingRef, mapRef }) {
   const map = useMap();
@@ -60,6 +61,7 @@ function Map() {
   const mapRef = useRef(null);
   const markersRef = useRef([]);
   const isZoomingRef = useRef(false);
+  const markerRefs = useRef({});
 
   useEffect(() => {
     const validResources = resourcesData.filter(
@@ -99,18 +101,24 @@ function Map() {
   }, []);
 
   const handleResourceClick = (resource) => {
-    if (mapRef.current) {
-      isZoomingRef.current = true;
+    if (!mapRef.current) return;
 
-      mapRef.current.flyTo([resource.lat, resource.lng], 16, {
-        animate: true,
-        duration: 0.8,
-      });
+    isZoomingRef.current = true;
 
-      setTimeout(() => {
-        isZoomingRef.current = false;
-      }, 900);
-    }
+    const map = mapRef.current;
+
+    map.once("moveend", () => {
+      const marker = markerRefs.current[resource.id];
+      if (marker) {
+        marker.openPopup();
+      }
+      isZoomingRef.current = false;
+    });
+
+    map.flyTo([resource.lat, resource.lng], 16, {
+      animate: true,
+      duration: 0.8,
+    });
   };
 
   return (
@@ -131,7 +139,7 @@ function Map() {
         <div className="map-wrapper">
           <MapContainer
             center={center}
-            zoom={13}
+            zoom={11}
             style={{ height: "70vh", minHeight: "420px", width: "100%" }}
             scrollWheelZoom={true}
             tap={true}
@@ -152,6 +160,11 @@ function Map() {
               <Marker
                 key={marker.resource.id || index}
                 position={marker.position}
+                ref={(ref) => {
+                  if (ref && marker.resource.id) {
+                    markerRefs.current[marker.resource.id] = ref;
+                  }
+                }}
               >
                 <Popup>
                   <div className="popup-content">

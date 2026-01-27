@@ -104,7 +104,7 @@ export default function ResourcesList() {
                 >
                   <div className={`info-card ${href ? "clickable" : ""}`}>
                     <div className="top-row">
-                      <div className="resource-name">{r.name}</div>
+                      <div className="card-title">{r.name}</div>
                       <div className="muted">{r.category}</div>
                     </div>
 
@@ -119,18 +119,6 @@ export default function ResourcesList() {
                         </span>
                       ))}
                     </div>
-
-                    <div className="meta-row">
-                      <div className="muted">
-                        {r.phone ? <span>{r.phone}</span> : null}
-                      </div>
-                      {r.website ? (
-                        <span style={{ color: "var(--accent)" }}>
-                          Visit site →
-                        </span>
-                      ) : null}
-                    </div>
-
                     {r.hours || r.eligibility ? (
                       <div className="muted">
                         {r.hours ? (
@@ -145,6 +133,17 @@ export default function ResourcesList() {
                         ) : null}
                       </div>
                     ) : null}
+
+                    <div className="meta-row">
+                      <div className="muted">
+                        {r.phone ? <span>{r.phone}</span> : null}
+                      </div>
+                      {r.website ? (
+                        <span style={{ color: "var(--accent)" }}>
+                          Visit site →
+                        </span>
+                      ) : null}
+                    </div>
                   </div>
                 </Wrapper>
               );
